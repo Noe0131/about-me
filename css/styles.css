@@ -8,8 +8,6 @@ header {
     justify-content: center;
 }
 
-p {
-}
 
 .title {
     flex: 0 0 5%;
@@ -27,10 +25,54 @@ p {
     
 }
 /*--共通　横並びのための設定--*/
+/*--下線とアイコンの設定--*/
 .gnavi {
     display: flex;
     flex-wrap: wrap;/*--スマホ表示折り返し用なのでPCのみなら不要--*/
     list-style: none;
+}
+.gnavi li {
+    position: relative;
+}
+.gnavi li::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    background-position: center;
+    background-size: contain;
+}
+
+.menu-item.icn-top::before {
+    background-image: url(../img/Water-Systems_Water-Filtration-Deep-Blue.png)
+}
+
+.menu-item.about-top::before {
+    background-image: url(../img/8134171.png)
+}
+
+.menu-item.hobby-top::before {
+    background-image: url(../img/R.png)
+}
+
+.menu-item.hobby2-top::before {
+    top: -10px;
+    height: 2.5rem;
+    background-image: url(../img/pikmin-png-transparent-87721-1137x1536.png)
+   
+}  
+
+.menu-item.soccer-top::before {
+    background-image: url(../img/123px-France_\(National_Team\)logo_square.png)
+}
+
+.menu-item.contact-top::before {
+    background-image: url(../img/kkrn_icon_otoiawase_1.webp)
 }
 
 .gnavi li a {
@@ -52,12 +94,12 @@ p {
 }
 
 .gnavi li a::after {
-     content:'';/*--絶対配置で線の配置を決める--*/
+    content:'';/*--絶対配置で線の配置を決める--*/
     position: absolute;
     bottom: 0;
-    left:10px;
+    left:30px;/* ここを変更することで左の線の長さを調整 */
     /*--線の形状--*/
-    width: 80%;
+    width: 65%;/* ここを調整する -- 線の幅を変えたい場合、この値を変更します。*/
     height: 2px;
     background: #0481A2;
     /*--アニメーションの指定--*/
@@ -71,4 +113,64 @@ p {
 .gnavi li a:hover::after{
     transform: scale(1,1);/*--X方向にスケールを拡大--*/
 }
+/*-------------------------------------------------*/
+/*ハンバーガーメニューのタイトル*/
+.hamburger {
+    display: none; /* 初期は非表示 */
+    flex-direction: column; /* 子要素を縦方向（列）に並べる */
+    justify-content: space-around; /* 子要素間に均等なスペースを配置する */
+    width: 30px; /* ハンバーガーメニューの幅を30ピクセルに設定 */
+    height: 20px; /* ハンバーガーメニューの高さを20ピクセルに設定 */
+    cursor: pointer; /* マウスカーソルをポインターに変える（クリック可能を示す） */
+    z-index: 10; /* 要素のスタッキング順序を10に設定。他の要素の上に表示される */
+}
 
+.hamburger span {
+    display: block; /*-- 各スパンをブロック表示にする --*/
+    width: 100%; /*-- スパンの幅を100%に設定 --*/
+    height: 2px; /*-- スパンの高さを2pxに設定 --*/
+    background: #0481A2; /*-- スパンの背景色を#0481A2に設定 --*/
+    transition: all 0.3s ease; /*-- スパンのすべてのプロパティを0.3秒で滑らかに変化させる --*/
+}
+
+/*クリック時のスタイル */
+.hamburger.is-opened span:nth-child(1) {
+    transform: rotate(45deg); /*-- 最初のスパンを45度回転させる --*/
+    top: 6px; /*-- 最初のスパンを6px上に移動 --*/
+    position: relative; /*-- 最初のスパンの位置を相対的に設定 --*/
+}
+
+.hamburger.is-opened span:nth-child(2) {
+    opacity: 0; /*-- 2番目のスパンを透明にする --*/
+}
+
+.hamburger.is-opened span:nth-child(3) {
+    transform: rotate(-45deg); /*-- 3番目のスパンを-45度回転させる --*/
+    top: -6px; /*-- 3番目のスパンを6px下に移動 --*/
+    position: relative; /*-- 3番目のスパンの位置を相対的に設定 --*/
+}
+
+/* レスポンシブ：画面が小さい場合の設定 */
+@media screen and (max-width: 767px) {
+    .hamburger {
+        display: flex; /* 小さい画面では表示 */
+    }
+
+    .gnavi {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* ハンバーガーメニューとの距離を適宜調整 */
+        right: 40px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        z-index: 9;
+        border-radius: 15px;
+    }
+    
+
+    .gnavi.is-opened {
+        display: flex;
+    }
+}
