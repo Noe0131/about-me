@@ -135,8 +135,8 @@ header {
 
 /*クリック時のスタイル */
 .hamburger.is-opened span:nth-child(1) {
-    transform: rotate(45deg); /*-- 最初のスパンを45度回転させる --*/
-    top: 6px; /*-- 最初のスパンを6px上に移動 --*/
+    transform: rotate(40deg); /*-- 最初のスパンを45度回転させる --*/
+    top: 7px; /*-- 最初のスパンを6px上に移動 --*/
     position: relative; /*-- 最初のスパンの位置を相対的に設定 --*/
 }
 
@@ -145,8 +145,8 @@ header {
 }
 
 .hamburger.is-opened span:nth-child(3) {
-    transform: rotate(-45deg); /*-- 3番目のスパンを-45度回転させる --*/
-    top: -6px; /*-- 3番目のスパンを6px下に移動 --*/
+    transform: rotate(-40deg); /*-- 3番目のスパンを-45度回転させる --*/
+    top: -7px; /*-- 3番目のスパンを6px下に移動 --*/
     position: relative; /*-- 3番目のスパンの位置を相対的に設定 --*/
 }
 
@@ -154,6 +154,7 @@ header {
 @media screen and (max-width: 767px) {
     .hamburger {
         display: flex; /* 小さい画面では表示 */
+        max-width: 90%;
     }
 
     .gnavi {
@@ -167,6 +168,7 @@ header {
         padding: 10px;
         z-index: 9;
         border-radius: 15px;
+        transform: translatex(50px);
     }
     
 
