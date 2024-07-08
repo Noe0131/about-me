@@ -64,7 +64,6 @@ header {
     top: -10px;
     height: 2.5rem;
     background-image: url(../img/pikmin-png-transparent-87721-1137x1536.png)
-   
 }  
 
 .menu-item.soccer-top::before {
@@ -155,13 +154,16 @@ header {
     .hamburger {
         display: flex; /* 小さい画面では表示 */
         max-width: 90%;
+        position: fixed;
+        top:10px;
+        right: 10px;
     }
 
     .gnavi {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 70px; /* ハンバーガーメニューとの距離を適宜調整 */
+        top: 40px; /* ハンバーガーメニューとの距離を適宜調整 */
         right: 40px;
         background: white;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
