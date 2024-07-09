@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+    overflow-x: hidden; /* 横スクロールを無効に */
+}
 header {
     display: flex;
     gap: 10%;
@@ -150,6 +154,22 @@ header {
     position: relative; /*-- 3番目のスパンの位置を相対的に設定 --*/
 }
 
+/*フッダー*/
+.footer-nav {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    gap: 5%;
+    background-color: whitesmoke;
+    justify-content: center;
+    position: fixed;/* 後で変える予定marginも*/
+    margin-top: 10%;
+}   
+
+
+
+
+
 /* レスポンシブ：画面が小さい場合の設定 */
 @media screen and (max-width: 767px) {
     .hamburger {
@@ -171,7 +191,7 @@ header {
         padding: 10px;
         z-index: 9;
         border-radius: 25px;
-        transform: tranlateX(100%);
+        transform: tranlateX(-100%);
     }
     
 
