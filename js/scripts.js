@@ -1,7 +1,21 @@
 // Slickスライダーの初期化
-$('#js-slider').slick({
-    dots: true, // ナビゲーション用のドットを表示
-    speed: 500 // 500msの遷移速度
+$(document).ready(function() {
+    $('#js-slider').slick({
+        dots: true, // ナビゲーション用のドットを表示
+        speed: 500, // 500msの遷移速度
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive:  [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToshow: 1,
+                    centerPadding: '40px'
+                }
+            }
+        ]
+    });               
 });
 
 // ハンバーガーメニューのトグル
