@@ -53,30 +53,29 @@ header {
 }
 
 .menu-item.icn-top::before {
-    background-image: url(../img/Water-Systems_Water-Filtration-Deep-Blue.png)
+    background-image: url(../img/header/Water-Systems_Water-Filtration-Deep-Blue.png)
 }
 
 .menu-item.about-top::before {
-    background-image: url(../img/8134171.png)
+    background-image: url(../img/header/8134171.png)
 }
 
 .menu-item.hobby-top::before {
-    background-image: url(../img/R.png)
+    background-image: url(../img/header/R.png)
 }
 
 .menu-item.hobby2-top::before {
-    top: -10px;
-    height: 2.5rem;
-    background-image: url(../img/pikmin-png-transparent-87721-1137x1536.png)
+
+    background-image: url(../img/header/kkrn_icon_chikyuu_1-768x768.png)
    
 }  
 
 .menu-item.soccer-top::before {
-    background-image: url(../img/123px-France_\(National_Team\)logo_square.png)
+    background-image: url(../img/header/123px-France_\(National_Team\)logo_square.png)
 }
 
 .menu-item.contact-top::before {
-    background-image: url(../img/kkrn_icon_otoiawase_1.webp)
+    background-image: url(../img/header/kkrn_icon_otoiawase_1.webp)
 }
 
 .gnavi li a {
@@ -200,6 +199,7 @@ header {
 
 /* レスポンシブ：画面が小さい場合の設定 */
 @media screen and (max-width: 767px) {
+
     .hamburger {
         display: flex; /* 小さい画面では表示 */
         max-width: 90%;
@@ -221,9 +221,13 @@ header {
         border-radius: 25px;
         transform: tranlateX(-100%);
     }
-    
 
     .gnavi.is-opened {
         display: flex;
+    }
+
+    .footer-title li::before,
+    .footer-title li::after {
+        margin: 0; /* 位置を調整 */
     }
 }

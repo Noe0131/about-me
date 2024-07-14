@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>トップページ</title>
-    <!-- リセットCSS（destyle.css）をインクルード -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+    <!-- リセットCSS（destyle.css） -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
-    <!-- SlickスライダーのCSSファイル -->
-    <link rel="stylesheet" href="./js/libs/slick/slick-theme.css">
-    <link rel="stylesheet" href="./js/libs/slick/slick.css">
-    <!-- カスタムスタイルシート -->
+
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css" />
+
+    <!-- カスタムスタイルシート（styles.css） -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- アイコン -->
-    <link rel="icon" type="image/ipg" href="img/OIP.jpg">
-    <!-- jQueryライブラリ -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <!-- SlickスライダーのJavaScriptファイル -->
-    <script src="./js/libs/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" href="css/splideStyles.css">
+
 </head>
 <body>
     <header>
@@ -30,8 +32,8 @@
             <ul class="gnavi">
                 <li class="menu-item icn-top"><a href="index.html">トップページ</a></li>
                 <li class="menu-item about-top"><a href="about.html">自己紹介ページ</a></li>
-                <li class="menu-item hobby-top"><a href="hobby.html">どうぶつの森</a></li>
-                <li class="menu-item hobby2-top"><a href="hobby2.html">ピクミン</a></li>
+                <li class="menu-item hobby-top"><a href="hobby.html">ゲーム</a></li>
+                <li class="menu-item hobby2-top"><a href="hobby2.html">世界の国</a></li>
                 <li class="menu-item soccer-top"><a href="soccer.html">サッカー</a></li>
                 <li class="menu-item contact-top"><a href="contact.html">お問い合わせ</a></li>
             </ul>
@@ -39,14 +41,28 @@
     </header>
 
     <main>
-        <!-- Slickスライダーの要素 -->
-        <div id="js-slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
-            <div><h3>1</h3></div>
-            <div><h3>2</h3></div>
-            <div><h3>3</h3></div>
-            <div><h3>4</h3></div>
-            <div><h3>5</h3></div>
-            <div><h3>6</h3></div>
+        <!-- Splide -->
+        <div id="splide" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="img/d88f95ac-5e70-4065-baff-9ed678f0a1ce.jpg" alt="slide 1">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/image.png" alt="Slide 2">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/download.jpg" alt="Slide 3">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/shutterstock_112137761.jpg" alt="Slide 4">
+                    </li> 
+                    <li class="splide__slide">
+                        <img src="img/WC_Squads_France_(1)_0x0_1671510839.jpg" alt="Slide 4">
+                    </li> 
+                </ul>
+            </div>
+            <div class="splide__pagination"></div>
         </div>
     </main>
 
@@ -57,11 +73,18 @@
                 <li><a href="portfolio">ポートフォリオ</a></li>
                 <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
-        <p&copy class="footer-under">&copy; 2024 ボールドン ノエ. All rights reserved.</p>
+            <p class="footer-under">&copy; 2024 ボールドン ノエ. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+
     <!-- カスタムスクリプト -->
     <script src="./js/scripts.js"></script>
 </body>
 </html>
+
+
+
 

@@ -1,22 +1,28 @@
-// Slickスライダーの初期化
-$(document).ready(function() {
-    $('#js-slider').slick({
-        dots: true, // ナビゲーション用のドットを表示
-        speed: 500, // 500msの遷移速度
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        responsive:  [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToshow: 1,
-                    centerPadding: '40px'
-                }
-            }
-        ]
-    });               
+// ページが完全に読み込まれたときに、指定された関数を実行する
+document.addEventListener('DOMContentLoaded', function () {
+    // #splideというIDを持つHTML要素に新しいSplideスライダーを初期化する
+    new Splide('#splide', {
+        // スライダーをループモードに設定する
+        type: 'loop',
+        // 1ページに表示されるスライドの数を3に設定する
+        perPage: 2,
+        // スライダーが中央にフォーカスされるように設定する
+        focus: 'center',
+        // 各スライド間の間隔を1remに設定する
+        gap: '1rem',
+        // レスポンシブ設定を指定する
+        breakpoints: {
+            // 画面幅が767ピクセル以下の場合に適用される設定
+            767: {
+                // 1ページに表示されるスライドの数を1に設定する
+                perPage: 1,
+            },
+        },
+    // Splideインスタンスをマウントして、スライダーを表示する
+    }).mount();
 });
+
+
 
 // ハンバーガーメニューのトグル
 $(document).ready(function() {
