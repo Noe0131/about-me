@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
     new Splide('#splide', {
         // スライダーをループモードに設定する
         type: 'loop',
-        // 1ページに表示されるスライドの数を3に設定する
+        // 1ページに表示されるスライドの数を2に設定する
         perPage: 2,
         // スライダーが中央にフォーカスされるように設定する
         focus: 'center',
         // 各スライド間の間隔を1remに設定する
-        gap: '1rem',
+        gap: '0.5rem',
         // レスポンシブ設定を指定する
         breakpoints: {
             // 画面幅が767ピクセル以下の場合に適用される設定
