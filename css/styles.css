@@ -208,6 +208,11 @@ header {
     margin-top: 1rem;
 }
 
+.footer-navli.current a,
+.footer-nav li a:hover {
+    color: gray;
+}
+
 .footer-title li::before {
     content: " |";
     color: rgb(205, 193, 193);
