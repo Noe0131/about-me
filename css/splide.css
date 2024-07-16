@@ -1,8 +1,8 @@
 /* Splide カスタムスタイル */
 .splide {
+    position: relative;
     margin-top: 0.5rem;
     width: 100%;
-    height: 500px; /* スライダーの高さを調整 */
 }
 
 .splide__slide {
@@ -23,8 +23,9 @@
 .splide__pagination {
     position: absolute;
     top:  100%; /* スライダーの上に配置 */
+    bottom: initial;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-100%);
     display: flex;
     gap: 10px;
     z-index: 1;
@@ -45,6 +46,13 @@
     background-color: blue; /* アクティブ時の背景色を青に変更 */
 }
 
+/* 小さな画面用のスタイル */
+@media (max-width: 767px) {
+    .splide__pagination {
+        /* top: 100%; */
+        gap: 5px; /* ボタン間のギャップを調整 */
+    }
+}
 
 
     

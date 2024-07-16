@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
         type: 'loop',
         // 1ページに表示されるスライドの数を2に設定する
         perPage: 2,
+        // 自動再生
+        autoplay: true,
+        // 自動再生の間隔（ミリ秒）
+        interav: 30,
+        // マウスホバー時に自動再生を一時停止
+        pausOnHover: true,
         // スライダーが中央にフォーカスされるように設定する
         focus: 'center',
         // 各スライド間の間隔を1remに設定する
