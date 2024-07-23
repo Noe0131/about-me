@@ -216,9 +216,12 @@ header {
     margin-bottom: 0.5rem;
 }
 
+.footer-title li a:hover {
+    color: gray;
+}
+
 /* レスポンシブ：画面が小さい場合の設定 */
 @media screen and (max-width: 767px) {
-
     .title {
         position: absolute;
         left: 10%;

@@ -12,10 +12,15 @@
     <!-- リセットCSS（destyle.css） -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
 
-    <!-- カスタムスタイルシート（styles.css） -->
-    <link rel="stylesheet" href="css/hobby2.css">
+    <!-- SwiperのCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+    <!-- カスタムスタイルシート（hobbby2.css） -->
+    <link rel="stylesheet" href="css/hobby2.css">
+    <link rel="stylesheet" href="css/slider.css/swiper.css">
+   
 </head>
+
 <body>
     <header>
         <h1 class="title">ボールドン ノエ</h1>
@@ -35,7 +40,58 @@
             </ul>
         </nav>
     </header>
-
+    <main>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content" data-content="one">
+                        <h1>ヨーロッパ大陸</h1>
+                        <p>aiueo</p>
+                    </div>
+                    <div class="background" data-item="one"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content" data-content="two">
+                        <h1>アジア大陸</h1>
+                        <p>aiueo</p>
+                    </div>
+                    <div class="background" data-item="two"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content" data-content="three">
+                        <h1>アフリカ大陸</h1>
+                        <p>aiueo</p>
+                    </div>
+                    <div class="background" data-item="three"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content" data-content="four">
+                        <h1>北アメリカ大陸</h1>
+                        <p>aiueo</p>
+                    </div>
+                    <div class="background" data-item="four"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content" data-content="five">
+                        <h1>南アメリカ</h1>
+                        <p>aiueo</p>
+                    </div>
+                    <div class="background" data-item="five"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="content" data-content="six">
+                        <h1>オーストラリア大陸</h1>
+                        <p>aiueo</p>
+                    </div>
+                    <div class="background" data-item="six"></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="welcome4">
+            <h1>ようこそ、世界の国へ。</h1>
+        </div>
+    </main>  
     <footer>
         <div class="footer-nav">
             <ul class="footer-title">
@@ -46,8 +102,9 @@
             <p class="footer-under">&copy; 2024 ボールドン ノエ. All rights reserved.</p>
         </div>
     </footer>
-
+    <!-- SwiperのJavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- カスタムスクリプト -->
     <script src="./js/scripts.js"></script>
-</body>
-</html>
+    <script src="js/swiper.js"></script>
+    <script>

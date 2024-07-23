@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // 自動再生
         autoplay: true,
         // 自動再生の間隔（ミリ秒）
-        interav: 30,
+        interav: 3000,
         // マウスホバー時に自動再生を一時停止
         pausOnHover: true,
         // スライダーが中央にフォーカスされるように設定する
@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // ハンバーガーメニューのトグル
 $(document).ready(function() {
     $('#js-hamburger').on('click', function(e) {
+        console.log('TOTO');
         e.preventDefault(); // -- デフォルトのクリック動作を無効にする --
         $(this).toggleClass('is-opened'); // -- ハンバーガーアイコンにis-openedクラスをトグルする --
         $('.gnavi').toggleClass('is-opened'); // -- ナビゲーションメニューにis-openedクラスをトグルする --
@@ -61,4 +62,8 @@ $(document).ready(function() {
         }
     }
 });
+
+
+
+  
 

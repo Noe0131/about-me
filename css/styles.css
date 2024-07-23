@@ -1,7 +1,9 @@
 body {
     margin: 0;
     overflow-x: hidden; /* 横スクロールを無効に */
+    overflow-y: auto;/*縦スクロール可能　ここ変更*/
 }
+
 header {
     display: flex;
     gap: 10%;
@@ -180,22 +182,87 @@ header {
     justify-content: center;
     width: 100%;
     height: 70px;
-    background-color: skyblue;
+    background-color: royalblue;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin-top: 0.5rem;
-    z-index: 1; /* ページネーションより上に配置 */
+}
+
+/* self-introduction-listなど要素の調整 */
+.self-introduction-list, .hobby-list, .contact-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: royalblue;
+    font-size: 30px;
+    margin-top: 70px;
+}
+
+/*self-introduction-page, .portfolio-pageなど要素の調節 */
+.self-introduction-page, .portfolio-page,  .soccer-page, .game-page, .world-page, .contact-page {
+    color: royalblue;
+    font-size: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.self-introduction-page-article, .portfolio-page-article, .soccer-page-article, .game-page-article, .world-page-article,
+.contact-page-article {
+    color: #000;
+    font-size: 16px;
+}
+
+.self-introduction-page img, .portfolio-page img, .soccer-page img, .game-page img, .world-page img, .contact-page img {
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.self-introduction-page h2::before, .portfolio-page h2::before, .soccer-page h2::before, .game-page h2::before, .world-page h2::before,
+.contact-page h2::before {
+    content: '';
+    display: inline-block; /* 要素をインラインブロックにする */
+    width: 18px; /* 画像の幅 */
+    height: 18px; /* 画像の高さ */
+    background-image: url('/img/index/arrow-303271_1280.png'); /* 画像のパス */
+    background-size: cover; /* 画像を要素に合わせてサイズ調整 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    margin-right: 5px; /* 画像とテキストの間の余白 */
+    margin-top: 0.5rem;
+}
+
+.self-introduction-page:hover, .portfolio-page:hover, .soccer-page:hover, .game-page:hover, .world-page:hover, .contact-page:hover { 
+    color: aqua; /* ホバー時のテキスト色を変更 */
+    cursor: pointer;
+}
+
+
+/* 青い線 */
+.thin-line {
+    border: none;
+    border-top: 1px solid royalblue;
+    margin-top: 70px;
+}
+
+/* 青い線2 */
+hr.thin-line2 {
+    width: 100vw; /* ビューポート幅の100% */
+    margin: 70px auto 0; /* 上部マージン70px、左右中央寄せ */
+    position: relative; /* 位置を相対的に指定 */
+    left: calc(-50vw + 50%); /* ビューポート幅全体をカバーし中央に配置 */
+    border-top: 1px solid royalblue; /* 上部に1pxの青い線 */
 }
 
 /*フッダー*/
 .footer-nav {
+    position: fixed;
+    display: block;
     gap: 10%;
     width: 100%;
     height: 80px;
     background-color: snow;
-    position: absolute;
-    bottom: 0;
 }  
  
 .footer-title {
@@ -205,7 +272,6 @@ header {
     color: black;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
 }
 
 .footer-title li::before {
@@ -223,13 +289,13 @@ header {
 /* .footer-underクラスにleft: 50%;とtransform: translateX(-50%);を追加して、水平に中央揃えする */
 /* .footer-underクラスにwidth: 100%;を追加して、テキストの中央揃えを維持する */
 .footer-under {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
     width: 100%;
-    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.footer-title li a:hover {
+    color: gray;
 }
 
 /* レスポンシブ：画面が小さい場合の設定 */
@@ -271,7 +337,7 @@ header {
     .gnavi {
         display: none;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 60px; /* ハンバーガーメニューとの距離を適宜調整 */
         right: 0px;
         background: white;
@@ -279,7 +345,11 @@ header {
         padding: 10px;
         z-index: 9;
         border-radius: 25px;
-        transform: tranlateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    .gnavi.is-opened {
+        display: flex;
     }
 
     .footer-title li::before,
