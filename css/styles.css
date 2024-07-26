@@ -257,7 +257,7 @@ hr.thin-line2 {
 
 /*フッダー*/
 .footer-nav {
-    position: fixed;
+    margin-top: 70px;
     display: block;
     gap: 10%;
     width: 100%;

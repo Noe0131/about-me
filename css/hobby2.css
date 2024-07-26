@@ -173,6 +173,7 @@ header {
     top: -7px; /*-- 3番目のスパンを6px下に移動 --*/
     position: relative; /*-- 3番目のスパンの位置を相対的に設定 --*/
 }
+
 /* welcome4の要素 */
 .welcome4 {
     display: flex;
@@ -187,9 +188,42 @@ header {
     margin-top: 0.5rem;
 }
 
+/* .world-heritageの要素 */
+.world-heritage {
+    width: 100%;
+    height: 100px;
+    background-color: aliceblue;
+}
+
+.world-heritage h2 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: large;
+}
+
+.world-heritage p {
+    text-align: center;
+    padding-top: 1rem;
+}
+/* .thin-lineの要素 */
+.thin-line {
+    border: none;
+    border-top: 1px solid royalblue;
+    margin-top: 70px;
+}
+.world-heritage-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: royalblue;
+    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
 /*フッダー*/
 .footer-nav {
-    position: fixed;
+    margin-top: 70px;
     display: block;
     gap: 10%;
     width: 100%;
