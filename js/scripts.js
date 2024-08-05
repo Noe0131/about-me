@@ -1,3 +1,4 @@
+// トップページのスライド
 // ページが完全に読み込まれたときに、指定された関数を実行する
 document.addEventListener('DOMContentLoaded', function () {
     // #splideというIDを持つHTML要素に新しいSplideスライダーを初期化する
@@ -65,23 +66,32 @@ $(document).ready(function() {
 
 // 世界遺産ページのタブメニュー
 document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.tab-link');
-    const panes = document.querySelectorAll('.tab-pane');
+    // タブメニューを初期化する関数
+    const initializeTabs = (containerId) => {
+        const container = document.getElementById(containerId); // -- タブメニューコンテナを取得 --
+        const tabs = container.querySelectorAll('.tab-link'); // -- すべてのタブリンクを取得 --
+        const panes = container.querySelectorAll('.tab-pane'); // -- すべてのタブペインを取得 --
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const target = document.getElementById(tab.getAttribute('data-tab'));
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = container.querySelector(`#${tab.getAttribute('data-tab')}`); // -- クリックされたタブの対応するタブペインを取得 --
 
-            // すべてのタブとコンテンツから 'active' クラスを削除
-            tabs.forEach(t => t.classList.remove('active'));
-            panes.forEach(p => p.classList.remove('active'));
-            
-            // クリックされたタブとその対応するコンテンツに 'active' クラスを追加
-            tab.classList.add('active');
-            target.classList.add('active');
+                // すべてのタブとコンテンツから 'active' クラスを削除
+                tabs.forEach(t => t.classList.remove('active')); // -- すべてのタブリンクから 'active' クラスを削除 --
+                panes.forEach(p => p.classList.remove('active')); // -- すべてのタブペインから 'active' クラスを削除 --
+
+                // クリックされたタブとその対応するコンテンツに 'active' クラスを追加
+                tab.classList.add('active'); // -- クリックされたタブリンクに 'active' クラスを追加 --
+                target.classList.add('active'); // -- 対応するタブペインに 'active' クラスを追加 --
+            });
         });
-    });
+    };
+
+    // 各タブメニューコンテナを初期化
+    initializeTabs('tab-container-1'); // -- 最初のタブメニューコンテナを初期化 --
+    initializeTabs('tab-container-2'); // -- 二番目のタブメニューコンテナを初期化 --
 });
+
 
 
 

@@ -6,6 +6,9 @@
     <title>お問い合わせ</title>
     <link rel="icon" href="/img/favicon/ef75d3a5-3a8e-4180-8a3f-cde18bfb1c86.jpg">
 
+     <!-- Bootstrap CSS --><!--ここ変更したらフッダーに線が入る-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 
@@ -13,8 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
 
     <!-- カスタムスタイルシート（styles.css） -->
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/header footer.css">
     <link rel="stylesheet" href="css/contact.css">
 
 </head>
@@ -37,12 +39,48 @@
             </ul>
         </nav>
     </header>
-
+    <main> <!-- メインコンテンツを包むコンテナ。背景色が白で、上下のパディングが大きめ -->
+        <div class="bg-white py-5 mt-3">
+            <div class="container"> <!-- 中央寄せのレイアウト。Bootstrapのグリッドシステムを使用 -->
+                <div class="row justify-content-center"> <!-- 中央寄せの行 -->
+                    <div class="col-md-10 bg-light py-5"> <!-- 背景がライトグレーで、上下のパディングが大きめ -->
+                        <h2 class="fs-2 mb-5 text-center">お問い合わせ</h2> <!-- セクションタイトル。フォントサイズが大きく、中央寄せで太字 -->
+                        <form method="post" action="mail.php"> <!-- フォームの開始。送信先は mail.php -->
+                            <div class="mb-4"> <!-- 名前入力フィールド。下にマージンがあり、必須項目としてプレースホルダーが設定されている -->
+                                <input type="text" class="form-control" name="お名前" placeholder="名前（必須）" value="">
+                            </div>
+                            <div class="mb-4"> <!-- 住所入力フィールド。下にマージンがあり -->
+                                <input type="text" class="form-control" name="住所" placeholder="住所" value="">
+                            </div>
+                            <div class="mb-4"> <!-- メールアドレス入力フィールド。下にマージンがあり、必須項目としてプレースホルダーが設定されている -->
+                                <input type="text" class="form-control" name="Email" placeholder="メールアドレス（必須）" value="">
+                            </div>
+                            <div class="mb-5"> <!-- 電話番号入力フィールド。下にマージンがあり -->
+                                <input type="text" class="form-control" name="電話番号" placeholder="電話番号" value="">
+                            </div>
+                            <div class="mb-3"> <!-- お問い合わせ内容のテキストエリア。下にマージンがあり、行数が指定されている -->
+                                <textarea class="form-control" name="お問い合わせ内容" rows="5" placeholder="メッセージを入力してください"></textarea>
+                            </div>
+                            <div class="form-check mb-4"> <!-- 利用規約への同意チェックボックス。下にマージンがあり、チェックボックスとラベルが含まれている -->
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label" for="flexCheckIndeterminate">
+                                    利用規約に同意します。<a href="" target="_blank" rel="noopener noreferrer" class="text-decoration-underline text-dark">プライバシーポリシーはこちら</a>
+                                </label>
+                            </div>
+                            <div class="text-center pt-3"> <!-- 送信ボタン。中央寄せで上下にパディングがある -->
+                                <button type="submit" class="btn btn-primary">送信</button>.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
     <footer>
         <div class="footer-nav">
             <ul class="footer-title">
                 <li><a href="index.html">トップページ</a></li>
-                <li><a href="portfolio">ポートフォリオ</a></li>
+                <li><a href="portfolio.html">ポートフォリオ</a></li> <!-- 修正 -->
                 <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
             <p class="footer-under">&copy; 2024 ボールドン ノエ. All rights reserved.</p>

@@ -1,281 +1,186 @@
-body {
-    margin: 0;
-    overflow-x: hidden; /* 横スクロールを無効に */
+/* ナビゲーションバーのスタイル */
+.welcome5 {
+    display: flex; /* フレックスボックスを使用して中央寄せ */
+    align-items: center; /* 垂直方向に中央寄せ */
+    justify-content: center; /* 水平方向に中央寄せ */
+    width: 100%; /* 幅を100%に設定 */
+    height: 70px; /* 高さを70pxに設定 */
+    background-color: darkblue; /* 背景色を濃い青に設定 */
+    color: white; /* 文字色を白に設定 */
+    font-size: 25px; /* フォントサイズを25pxに設定 */
+    font-weight: bold; /* フォントを太字に設定 */
 }
-header {
+
+/* コンテナのスタイル */
+.container {
+    width: 70%; /* 幅を70%に設定 */
+    margin: auto; /* 水平方向に中央寄せ */
+    margin-top: 50px; /* 上に50pxのマージンを追加 */
+    overflow: hidden; /* オーバーフローを隠す */
+    padding: 20px; /* 20pxのパディングを追加 */
+}
+
+/* サッカー概要の見出しのスタイル */
+.soccer-overview h1 {
+    display: flex; /* フレックスボックスを使用して中央寄せ */
+    align-items: center; /* 垂直方向に中央寄せ */
+    justify-content: center; /* 水平方向に中央寄せ */
+    color: royalblue; /* 文字色をロイヤルブルーに設定 */
+    font-size: 30px; /* フォントサイズを30pxに設定 */
+    margin-top: 70px; /* 上に70pxのマージンを追加 */
+    margin-bottom: 3rem; /* 下に3remのマージンを追加 */
+}
+
+/* テキストコンテンツのリストのスタイル */
+.text-content ul {
+    margin-bottom: 1rem; /* 下に1remのマージンを追加 */
+}
+
+/* サッカー概要のフレックスコンテナのスタイル */
+.soccer-overview .flex-container {
+    display: flex; /* フレックスボックスを使用 */
+    align-items: flex-start; /* 上揃えに設定 */
+}
+
+/* サッカー概要のテキストコンテンツのスタイル */
+.soccer-overview .text-content {
+    flex-direction: column; /* 垂直方向に要素を配置 */
+}
+
+/* サッカー概要のテキストの段落スタイル */
+.soccer-overview .text-content p {
+    margin-bottom: 20px; /* 下に20pxのマージンを追加 */
+}
+
+/* サッカー概要の画像コンテンツのスタイル */
+.soccer-overview .image-content {
+    margin-left: 20px; /* 左に20pxのマージンを追加 */
+}
+
+/* サッカー概要の画像のスタイル */
+.soccer-overview .image-content img {
+    max-width: 350px; /* 最大幅を350pxに設定 */
+}
+
+/* 細い線のスタイル */
+.thin-line {
+    border: none; /* 枠線なし */
+    border-top: 1px solid royalblue; /* 上部にロイヤルブルーの1pxの線を追加 */
+    margin-top: 70px; /* 上に70pxのマージンを追加 */
+}
+
+/* 監督の見出しのスタイル */
+.director h1 {
+    display: flex; /* フレックスボックスを使用して中央寄せ */
+    align-items: center; /* 垂直方向に中央寄せ */
+    justify-content: center; /* 水平方向に中央寄せ */
+    color: royalblue; /* 文字色をロイヤルブルーに設定 */
+    font-size: 30px; /* フォントサイズを30pxに設定 */
+    margin-top: 70px; /* 上に70pxのマージンを追加 */
+    margin-bottom: 1rem; /* 下に3remのマージンを追加 */
+    transform: translateX(60%); /* 60%右に移動 */
+}
+
+/* 監督のテキストの段落スタイル */
+.director p {
+    transform: translateX(10%) translateY(40%); /* 10%右に、10%下に移動 */
+}
+
+/* 監督セクションのコンテナのスタイル */
+.container-director {
+    width: 70%; /* 幅を70%に設定 */
+    margin: auto; /* 水平方向に中央寄せ */
+    margin-top: 50px; /* 上に50pxのマージンを追加 */
+}
+
+/* 監督セクションのスタイル */
+.director {
+    display: flex; /* フレックスボックスを使用 */
+}
+
+/* 監督セクションの画像コンテンツのスタイル */
+.image-content-director img {
+    width: 60%; /* 幅を60%に設定 */
+    margin-top: 10rem; /* 上に10remのマージンを追加 */
+    transform: translateX(30%) ; /* 30%右に移動 */
+    border-radius: 10px;
+}
+
+.player-uefa, .fff-movie {
+    display: flex; /* フレックスボックスを使用して中央寄せ */
+    align-items: center; /* 垂直方向に中央寄せ */
+    justify-content: center; /* 水平方向に中央寄せ */
+    color: royalblue; /* 文字色をロイヤルブルーに設定 */
+    font-size: 30px; /* フォントサイズを30pxに設定 */
+    margin-top: 100px; /* 上に70pxのマージンを追加 */
+    margin-bottom: 5rem;
+}
+
+.video-container {
     display: flex;
-    gap: 10%;
-    width: 100%;
-    height: 100px;
-    background-color: azure;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem; /* アイテム間の隙間 */
+    justify-content: center; /* 水平方向に中央揃え */
+    padding: 10px;
+}
+
+.video-item {
+    flex: 1 1 calc(50% - 1rem); /* 2列にするために幅を設定 */
+}
+
+.video-item iframe {
+    width: 100%; /* 親要素の幅に合わせる */
+    height: 400px; /* 高さは自動で調整 */
+}
+
+.video-item h1 {
+    margin: 10px 0; /* タイトルの上下にマージンを追加 */
 }
 
 
-.title {
-    flex: 0 0 5%;
-    text-align: center;
-    color: #0481A2;
-    font-size: 20px;
-    white-space: nowrap;
-}
 
-.menu-item {
-    list-style: none;
-    display:inline-block;
-    padding: 5px;
-    font-size: medium;
-    
-}
-/*--共通　横並びのための設定--*/
-/*--下線とアイコンの設定--*/
-.gnavi {
-    display: flex;
-    flex-wrap: wrap;/*--スマホ表示折り返し用なのでPCのみなら不要--*/
-    list-style: none;
-}
-.gnavi li {
-    position: relative;
-}
-.gnavi li::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    bottom: 0;
-    left: 0;
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    margin: auto;
-    background-position: center;
-    background-size: contain;
-}
-
-.menu-item.icn-top::before {
-    background-image: url(../img/header/Water-Systems_Water-Filtration-Deep-Blue.png)
-}
-
-.menu-item.about-top::before {
-    background-image: url(../img/header/8134171.png)
-}
-
-.menu-item.hobby-top::before {
-    background-image: url(../img/header/game_controller.png)
-}
-
-.menu-item.hobby2-top::before {
-    background-image: url(../img/header/kkrn_icon_chikyuu_1-768x768.png)
-   
-}  
-
-.menu-item.soccer-top::before {
-    background-image: url(../img/header/123px-France_\(National_Team\)logo_square.png)
-}
-
-.menu-item.contact-top::before {
-    background-image: url(../img/header/kkrn_icon_otoiawase_1.webp)
-}
-
-.gnavi li a {
-    display: block;
-    padding: 10px 30px;
-    text-decoration: none;
-    color: #0481A2;
-}
-
-/*--5-3-3左から右に線が伸びる（下部）--*/
-/*--線の基礎とするためのrelativeを指定--*/
-.gnavi li a {
-    position: relative;
-}
-
-.gnavi li.current a,
-.gnavi li a:hover {
-    color:aqua
-}
-
-.gnavi li a::after {
-    content:'';/*--絶対配置で線の配置を決める--*/
-    position: absolute;
-    bottom: 0;
-    left:30px;/* ここを変更することで左の線の長さを調整 */
-    /*--線の形状--*/
-    width: 65%;/* ここを調整する -- 線の幅を変えたい場合、この値を変更します。*/
-    height: 2px;
-    background: #0481A2;
-    /*--アニメーションの指定--*/
-    transition: all.3s;
-    transform: scale(0.0);/*--X方向0, Y方向１--*/
-    transform-origin: left top;/*--左上基点--*/
-}
-
-/*--現在地とhoverの設定--*/
-.gnavi li.current a::after,
-.gnavi li a:hover::after{
-    transform: scale(1,1);/*--X方向にスケールを拡大--*/
-}
-
-.menu-item.icn-top a::after {
-    width: 60%;
-}
-
-.menu-item.hobby-top a::after {
-    width: 45%;
-}
-
-.menu-item.hobby2-top a::after {
-    width: 50%;
-}
-
-.menu-item.soccer-top a::after {
-    width: 50%;
-}
-
-.menu-item.contact-top a::after {
-    width: 60%;
-}
-/*-------------------------------------------------*/
-/*ハンバーガーメニューのタイトル*/
-.hamburger {
-    display: none; /* 初期は非表示 */
-    flex-direction: column; /* 子要素を縦方向（列）に並べる */
-    justify-content: space-around; /* 子要素間に均等なスペースを配置する */
-    width: 30px; /* ハンバーガーメニューの幅を30ピクセルに設定 */
-    height: 20px; /* ハンバーガーメニューの高さを20ピクセルに設定 */
-    cursor: pointer; /* マウスカーソルをポインターに変える（クリック可能を示す） */
-    z-index: 10; /* 要素のスタッキング順序を10に設定。他の要素の上に表示される */
-}
-
-.hamburger span {
-    display: block; /*-- 各スパンをブロック表示にする --*/
-    width: 100%; /*-- スパンの幅を100%に設定 --*/
-    height: 2px; /*-- スパンの高さを2pxに設定 --*/
-    background: #0481A2; /*-- スパンの背景色を#0481A2に設定 --*/
-    transition: all 0.3s ease; /*-- スパンのすべてのプロパティを0.3秒で滑らかに変化させる --*/
-}
-
-/*クリック時のスタイル */
-.hamburger.is-opened span:nth-child(1) {
-    transform: rotate(40deg); /*-- 最初のスパンを45度回転させる --*/
-    top: 7px; /*-- 最初のスパンを6px上に移動 --*/
-    position: relative; /*-- 最初のスパンの位置を相対的に設定 --*/
-}
-
-.hamburger.is-opened span:nth-child(2) {
-    opacity: 0; /*-- 2番目のスパンを透明にする --*/
-}
-
-.hamburger.is-opened span:nth-child(3) {
-    transform: rotate(-40deg); /*-- 3番目のスパンを-45度回転させる --*/
-    top: -7px; /*-- 3番目のスパンを6px下に移動 --*/
-    position: relative; /*-- 3番目のスパンの位置を相対的に設定 --*/
-}
-
-/*フッダー*/
-.footer-nav {
-    gap: 10%;
-    width: 100%;
-    height: 80px;
-    background-color: snow;
-    position: absolute;
-    bottom: 0;
-}  
- 
-.footer-title {
-    display: flex;
-    gap: 5%;
-    font-size: medium;
-    color: black;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.footer-title li::before {
-    content: " |";
-    color: rgb(205, 193, 193);
-    margin-right: 1rem;
-}
-
-.footer-title li::after {
-    content: " |";
-    color: rgb(205,193, 193);
-    margin-left: 1rem;
-}
-
-/* .footer-underクラスにleft: 50%;とtransform: translateX(-50%);を追加して、水平に中央揃えする */
-/* .footer-underクラスにwidth: 100%;を追加して、テキストの中央揃えを維持する */
-.footer-under {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    width: 100%;
-    margin-bottom: 0.5rem;
-}
-
-.footer-title li a:hover {
-    color: gray;
-}
-
-/* レスポンシブ：画面が小さい場合の設定 */
-@media screen and (max-width: 767px) {
-    .title {
-        position: absolute;
-        left: 10%;
-        transform: translateX(-30);
+/* メディアクエリ - 画面幅が768px以下の場合 */
+@media (max-width: 767px) {
+    .soccer-overview .flex-container {
+        flex-direction: column; /* 垂直方向に要素を配置 */
+        align-items: center; /* 中央揃えに設定 */
     }
 
-    .menu-item.icn-top a::after {
-        width: 55%;
-    }
-    
-    .menu-item.hobby-top a::after {
-        width: 30%;
-    }
-    
-    .menu-item.hobby2-top a::after {
-        width: 40%;
-    }
-    
-    .menu-item.soccer-top a::after {
-        width: 40%;  
-    }
-    
-    .menu-item.contact-top a::after {
-        width: 55%;
+    .soccer-overview .image-content {
+        margin-left: 0; /* 左のマージンをリセット */
+        margin-bottom: 20px; /* 下に20pxのマージンを追加 */
     }
 
-    .hamburger {
-        display: flex; /* 小さい画面では表示 */
-        max-width: 90%;
-        position: fixed;
-        top: 20px;
-        right: 20px;
+    .soccer-overview .text-content p {
+        margin-bottom: 10px; /* 下に10pxのマージンを追加 */
     }
 
-    .gnavi {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* ハンバーガーメニューとの距離を適宜調整 */
-        right: 0px;
-        background: white;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 10px;
-        z-index: 9;
-        border-radius: 25px;
-        transform: tranlateX(-100%);
+    .director {
+        flex-direction: column; /* 垂直方向に要素を配置 */
+        align-items: center; /* 中央揃えに設定 */
+        text-align: center; /* テキストを中央揃えに設定 */
+        padding: 20px; /* 全体にパディングを追加 */
     }
 
-    .gnavi.is-opened {
-        display: flex;
+    .director h1 {
+        margin-top: 0; /* 上のマージンをリセット */
+        transform: translateX(-0%);
     }
 
-    .footer-title li::before,
-    .footer-title li::after {
-        margin: 0; /* 位置を調整 */
+    .director p {
+        transform: none; /* 変形をリセット */
+        margin-bottom: 20px; /* 下に20pxのマージンを追加 */
+    }
+
+    .image-content-director img {
+        width: 80%; /* 幅を80%に設定 */
+        margin-top: 20px; /* 上に20pxのマージンを追加 */
+        margin-left: 0; /* 左のマージンをリセット */
+        transform: none; /* 変形をリセット */
+    }
+
+    .player-uefa {
+        font-size: 25px; /* フォントサイズを25pxに設定 */
+        margin-top: 50px; /* 上に50pxのマージンを追加 */
     }
 }

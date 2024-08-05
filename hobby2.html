@@ -17,7 +17,8 @@
 
     <!-- カスタムスタイルシート（hobbby2.css） -->
     <link rel="stylesheet" href="css/hobby2.css">
-    <link rel="stylesheet" href="css/slider.css/swiper.css">
+    <link rel="stylesheet" href="/css/slider.css/swiper world.css">
+    <link rel="stylesheet" href="/css/header footer.css">
    
 </head>
 
@@ -41,7 +42,7 @@
         </nav>
     </header>
     <main>
-        <!-- Swiperのスライド -->
+        <!-- Swiperのスライド swiper　world.cssに書いてる　swiper.jsに書いてある-->
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -128,8 +129,8 @@
         <div class="world-heritage-list">
             <h2>世界遺産一覧</h2>
         </div>
-        <!-- Tab Menu  swiper.cssに書いてる-->
-        <div class="tab-container">
+        <!-- Tab Menu  swiper　world.cssに書いてる　scripts.jsに書いてある-->
+        <div class="tab-container" id="tab-container-1">
             <ul class="tab-menu">
                 <li class="tab-link active" data-tab="tab1">ヨーロッパ</li>
                 <li class="tab-link" data-tab="tab2">アジア</li>
@@ -137,75 +138,534 @@
             </ul>
             <div class="tab-content">
                 <div id="tab1" class="tab-pane active">
-                    <h2>タブ1のコンテンツ</h2>
+                    <h2>ヨーロッパの世界遺産</h2>
                     <div class="sub-content-container">
                         <div class="sub-content">
-                            <img src="https://wallpapercave.com/wp/wp5435565.jpg">
-                            <h3>サブコンテンツ1</h3>
-                            <p>サブコンテンツ1の詳細情報。</p>
+                            <img src="https://wallpapercave.com/wp/wp5435565.jpg" loading="lazy">
+                            <h3>イギリス、ビッグ・ベン</h3>
+                            <p>
+                                ビッグ・ベンはロンドンのウェストミンスター宮殿にある時計塔で、
+                                正式にはエリザベス・タワー。1859年に完成し、その巨大な時計と鐘が特徴で、
+                                ロンドンの象徴的なランドマークです。
+                            </p>
                         </div>
                         <div class="sub-content">
-                            <img src="https://cdn.getyourguide.com/img/location/59621e4cbc9db.jpeg/88.jpg">
-                            <h3>サブコンテンツ2</h3>
-                            <p>サブコンテンツ2の詳細情報。</p>
+                            <img src="https://cdn.getyourguide.com/img/location/59621e4cbc9db.jpeg/88.jpg" loading="lazy">
+                            <h3>フランス、シャンボール城</h3>
+                            <p>
+                                シャンボール城はフランス、ロワール川渓谷にあるルネサンス様式の城。
+                                1519年に建設が始まり、フランソワ1世の命で設計されました。
+                                美しい階段や広大な敷地が特徴です。
+                            </p>
                         </div>
                         <div class="sub-content">
-                            <img src="https://www.24taiwan.com/wp-content/uploads/2018/09/DSC06520.jpg">
-                            <h3>サブコンテンツ3</h3>
-                            <p>サブコンテンツ3の詳細情報。</p>
+                            <img src="https://www.24taiwan.com/wp-content/uploads/2018/09/DSC06520.jpg" loading="lazy">
+                            <h3>ドイツ、ノイシュヴァンシュタイン城</h3>
+                            <p>
+                                ノイシュヴァンシュタイン城はドイツ・バイエルン州にある19世紀のゴシック様式の城で、
+                                ルートヴィヒ2世によって建設されました。幻想的なデザインが特徴で、
+                                ディズニーの「眠れる森の美女」と「シンデレラ」の城のモデルとされています。
+                                美しい景観と独特の建築様式が評価されています。
+                            </p>
                         </div>
                         <div class="sub-content">
-                            <img src="https://wallpapercave.com/wp/wp4850745.jpg">
-                            <h3>サブコンテンツ3</h3>
-                            <p>サブコンテンツ3の詳細情報。</p>
+                            <img src="https://wallpapercave.com/wp/wp4850745.jpg" loading="lazy">
+                            <h3>スペイン、サグラダ・ファミリア</h3>
+                            <p>
+                                サグラダ・ファミリアはスペイン・バルセロナのカトリック教会で、
+                                アントニ・ガウディの設計によるものです。1882年に建設が始まり、
+                                独特なゴシック・モダニズム様式のデザインが特徴で、2026年の完成を目指しています。
+                            </p>
                         </div>
                         <div class="sub-content">
-                            <img src="https://p8.itc.cn/images01/20210108/8ef395cbe81648ccb5c4fd9ce8d5b6ba.jpeg">
-                            <h3>アマルフィ海岸 </h3>
-                            <p>サブコンテンツ3の詳細情報。</p>
+                            <img src="https://p8.itc.cn/images01/20210108/8ef395cbe81648ccb5c4fd9ce8d5b6ba.jpeg" loading="lazy">
+                            <h3>イタリア、アマルフィ海岸 </h3>
+                            <p>
+                                アマルフィ海岸はイタリア南部の美しい海岸線で、
+                                絵画のような景色と歴史的な村が特徴です。
+                                ユネスコの世界遺産に登録されており、崖沿いの町並みや青い海が魅力です。
+                            </p>
                         </div>
                         <div class="sub-content">
-                            <h3>サブコンテンツ3</h3>
-                            <p>サブコンテンツ3の詳細情報。</p>
+                            <img src="https://www.fjords.com/wp-content/uploads/2023/02/urnes_stave_church_lustrafjord_sognefjord-2000x1200.jpg" loading="lazy">
+                            <h3>ノルウェー、ウルネスの木造教会</h3>
+                            <p>
+                                ウルネスの木造教会はノルウェーの12世紀後半に建設された木造教会で、
+                                ノルウェーの中世木造建築の中で最古のものです。ユネスコの世界遺産に登録され、
+                                バイキング時代の影響を受けた装飾が特徴です。
+                            </p>
                         </div>
                         <div class="sub-content">
-                            <h3>サブコンテンツ3</h3>
-                            <p>サブコンテンツ3の詳細情報。</p>
+                            <img src="https://i.pinimg.com/originals/da/15/c2/da15c20ffb8efa940e1a8a90e67fba61.jpg" loading="lazy">
+                            <h3>オランダ、キンデルダイクの風車網</h3>
+                            <p>
+                                キンデルダイク＝エルスハウトの風車網はオランダのユネスコ世界遺産で、
+                                18世紀に建設された風車群です。水管理のために使われ、
+                                古風な風車の美しい景観と機能的な水利システムが特徴です。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://images.alphacoders.com/540/540265.jpg" loading="lazy">
+                            <h3>ハンガリー、ブダペスト国会議事堂</h3>
+                            <p>
+                                ブダペスト国会議事堂はハンガリーの象徴的な建物で、
+                                19世紀末に建設されたゴシック・リバイバル様式の壮大な建築物です。
+                                1987年に世界遺産に登録されています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://ipt.imgix.net/197082/x/0/northern-lights-and-icebergs-at-joekulsarlon-glacier-lagoon-13.jpg" loading="lazy">
+                            <h3>アイスランド、ヴァットナヨークトル国立公園</h3>
+                            <p>
+                                ヴァットナヨークトル国立公園はアイスランドの広大な自然保護区で、
+                                ヨーロッパ最大の氷河であるヴァットナヨークトル氷河を含みます。
+                                氷河、火山、渓谷などの壮大な自然景観が特徴で、2019年にユネスコ世界遺産に登録されました。
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div id="tab2" class="tab-pane">
-                    <h2>タブ2のコンテンツ</h2>
+                    <h2>アジアの世界遺産</h2>
                     <div class="sub-content-container">
                         <div class="sub-content">
-                            <h3>サブコンテンツ1</h3>
-                            <p>サブコンテンツ1の詳細情報。</p>
+                            <img src="https://tmyun.com/jpeg/yun_13884.jpg" loading="lazy">
+                            <h3>中国、万里の長城</h3>
+                            <p>
+                                万里の長城は中国の歴史的防御構造で、
+                                紀元前7世紀から16世紀にかけて建設されました。
+                                長さは約21,000キロメートルに及び、中国の北部を守るための壮大な壁です。
+                            </p>
                         </div>
                         <div class="sub-content">
-                            <h3>サブコンテンツ2</h3>
-                            <p>サブコンテンツ2の詳細情報。</p>
+                            <img src="https://image.ganref.jp/photos/members/sorita-2020/MDAwMDA1ODY3MQ_MC40Nzc5MjUwMCAxNjM4OTY5Nzgx_MTQ0Nzc5_3.jpg" loading="lazy">
+                            <h3>日本、清水寺</h3>
+                            <p>
+                                清水寺は京都にある歴史的な寺院で、778年に創建されました。
+                                特に「清水の舞台」で知られ、美しい木造の舞台からは京都市内の景色を一望できます。
+                                ユネスコの世界遺産にも登録されています。
+                            </p>
                         </div>
                         <div class="sub-content">
-                            <h3>サブコンテンツ3</h3>
-                            <p>サブコンテンツ3の詳細情報。</p>
+                            <img src="https://tmyun.com/jpeg/yun_4987.jpg" loading="lazy">
+                            <h3>韓国、宗廟</h3>
+                            <p>
+                                宗廟（チョンミョ）はソウルにある朝鮮王朝の王と王妃を祀る宗教施設です。
+                                1395年に建立され、朝鮮王朝の先祖祭祀の儀式が行われました。
+                                伝統的な建築と儀式が評価され、1995年にユネスコの世界遺産に登録されています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://www.immigration-residency.com/wp-content/uploads/2019/12/angkor-wat-temple.jpg" loading="lazy">
+                            <h3>カンボジア、アンコールワット</h3>
+                            <p>
+                                アンコールワットはカンボジアにある壮大な寺院群で、
+                                12世紀初頭にスーリヤヴァルマン2世によって建設されました。
+                                ヒンドゥー教寺院として始まり、後に仏教寺院に転用されました。
+                                広大な敷地と精緻な彫刻が特徴で、世界遺産にも登録されています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://res.cloudinary.com/dk0ndttcl/image/upload/q_auto:eco/v1/stw/gnl2pivpctxf6jiusmz1" loading="lazy">
+                            <h3>ベトナム、ハロン湾</h3>
+                            <p>
+                                ハロン湾はベトナム北部に位置する自然景観で、
+                                約1,600の石灰岩の島々と奇岩が点在します。
+                                神秘的な景観と青い海が特徴で、ユネスコの世界遺産に登録されています。
+                                湾内の洞窟や海上の村も見どころです。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://www.wallpics.net/wp-content/uploads/2022/08/Singapore-Wallpapers.jpg" loading="lazy">
+                            <h3>シンガポール、シンガポール植物園</h3>
+                            <p>
+                                シンガポール植物園はシンガポール中心部に位置する広大な庭園で、1859年に設立されました。
+                                熱帯植物や多様な植物コレクションが特徴で、特に「国立ラン園」が有名です。
+                                2015年にはユネスコの世界遺産に登録されました
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://franks-travelbox.com/wp-content/uploads/2017/10/myanmar-blick-auf-einen-teil-der-an-die-2-000-pracc88chtige-stupas-tempel-und-pagoden-in-der-historischen-kocc88nigsstadt-bagan-myanmar-bule-sky-studio-shutterstock.jpg" loading="lazy">
+                            <h3>ミャンマー、バガン遺跡</h3>
+                            <p>
+                                バガン遺跡はミャンマー中部に位置し、
+                                11世紀から13世紀にかけて築かれた約2,000の仏塔や寺院からなる古代都市です。
+                                壮大な建築群と歴史的価値から、観光地としても知られています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://www.worldatlas.com/upload/d3/ea/0d/shutterstock-217719724.jpg" loading="lazy">
+                            <h3>ヨルダン、ペトラ</h3>
+                            <p>
+                                ペトラはヨルダン南部に位置する古代ナバテア王国の遺跡で、紀元前5世紀頃から建設が始まりました。
+                                壮大な岩壁に彫られた建物群や「財宝の家」が特徴で、美しい風景と歴史的価値から、
+                                1985年にユネスコの世界遺産に登録されています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://img.pac.ru/landmarks/422603/big/6792E7B17F0001012271316D75553981.jpg" loading="lazy">
+                            <h3>トルコ、カッパドキアとギョレメ国立公園</h3>
+                            <p>
+                                カッパドキアとギョレメ国立公園はトルコ中央部に位置し、
+                                独特の地形と風景が特徴です。奇岩群や地下都市、洞窟住居が点在し、
+                                古代からの歴史的な遺産が残っています。
+                                特に「ギョレメ野外博物館」には中世の壁画が保存されており、
+                                1985年にユネスコの世界遺産に登録されています。
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div id="tab3" class="tab-pane">
-                    <h2>タブ3のコンテンツ</h2>
+                    <h2>アフリカの世界遺産</h2>
                     <div class="sub-content-container">
                         <div class="sub-content">
-                            <h3>サブコンテンツ1</h3>
-                            <p>サブコンテンツ1の詳細情報。</p>
+                            <img src="https://worldoneit.com/wp-content/uploads/2020/01/20190503_150423.jpg" loading="lazy">
+                            <h3>エジプト、カイロの歴史的都市</h3>
+                            <p>
+                                エジプトのカイロの歴史的市街は、中世からのイスラム建築の宝庫で、
+                                多くのモスク、マドラサ、城塞が点在しています。
+                                特にモハメド・アリ・モスクやカーン・エル・カリリ市場が有名で、
+                                古代と現代が融合する魅力的なエリアです。
+                            </p>
                         </div>
                         <div class="sub-content">
-                            <h3>サブコンテンツ2</h3>
-                            <p>サブコンテンツ2の詳細情報。</p>
+                            <img src="https://res.cloudinary.com/dk0ndttcl/image/upload/q_auto:eco/v1/stw/oryo3oin76uemkae3jbd" loading="lazy">
+                            <h3>チュニジア、エル・ジェムのローマ劇場</h3>
+                            <p>
+                                チュニジアのエル・ジェムのローマ劇場は、紀元3世紀に建設された円形闘技場で、
+                                約3万5000人を収容可能です。
+                                保存状態が非常に良く、古代ローマの建築技術と芸術を今に伝えています。
+                                アフリカ北部におけるローマ帝国の重要な遺産です。
+                            </p>
                         </div>
                         <div class="sub-content">
-                            <h3>サブコンテンツ3</h3>
-                            <p>サブコンテンツ3の詳細情報。</p>
+                            <img src="https://images.microcms-assets.io/assets/14d13bd618dc45c7b684223c0ca9d033/2a52cd82707b4db09611c509f734986f/mariola-grobelska-LAidV_89ORo-unsplash%20(2).jpg" loading="lazy">
+                            <h3>タンザニア、セレンゲティ国立公園</h3>
+                            <p>タンザニアのセレンゲティ国立公園は、広大なサバンナと多様な野生動物で知られています。
+                                特に、毎年のヌーやシマウマの大移動が有名で、
+                                これに伴う捕食動物とのドラマも魅力です。世界有数の生態系が保たれ、
+                            </p>
                         </div>
+                        <div class="sub-content">
+                            <img src="https://data.world-surfing.jp/wp-content/uploads/2014/11/IMG_5124.jpg" loading="lazy">
+                            <h3>ザンビア、ヴィクトリアの滝</h3>
+                            <p>ザンビアのヴィクトリアの滝は、ザンベジ川に位置する世界最大級の滝で、
+                                その壮大な規模と美しさから「雷鳴の煙」とも呼ばれています。
+                                幅約1,708メートル、高さ約108メートルの滝は、ユネスコの世界遺産に登録されており、
+                                絶え間ない水煙が特徴です。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://travel.south-africa.jp/wp-content/uploads/2022/02/RobbenIsland.jpg" loading="lazy">
+                            <h3>南アフリカ、ロベン島</h3>
+                            <p>
+                                南アフリカのロベン島は、ケープタウン沖に位置する島で、かつて政治犯の収容所として使用されていました。
+                                ネルソン・マンデラが18年間投獄されていたことで有名です。
+                                アパルトヘイト時代の象徴的な遺産として、1999年にユネスコの世界遺産に登録されました。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://cdn.mappr.co/wp-content/uploads/2023/08/Ethiopia-church-saint-george-amharic-bete-giyorgis.jpg?w=1536&h=1024&scale.option=fill&cw=1536&ch=1024&cx=center&cy=center"loading="lazy">
+                            <h3>エチオピア、ラリベラの岩窟教会群</h3>
+                            <p>
+                                エチオピアのラリベラの岩窟教会群は、12世紀から13世紀にかけて建造された11の岩窟教会で構成されています。
+                                これらの教会は、一枚岩を掘り抜いて作られたもので、
+                                キリスト教エチオピアの宗教的中心地です。ユネスコの世界遺産に登録され、
+                                その壮大な建築と宗教的な重要性が評価されています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://www.letribunaldunet.fr/wp-content/uploads/2018/11/gal-2367762-1200x632.jpg" loading="lazy">
+                            <h3>マリ、ティムブクトゥ</h3>
+                            <p>
+                                マリのティムブクトゥは、西アフリカの歴史的な都市で、中世にはイスラム学問と交易の中心地として栄えました。
+                                14世紀から16世紀にかけて建てられたモスクやマドラサがあり、
+                                その中にはジンガリベリ・モスクやサンコーレ・モスクが含まれます。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://www.christravelblog.com/wp-content/uploads/2020/03/IMG_0962_Wadi_Al_Hitan_Whale_Valley_016.jpg" loading="lazy">
+                            <h3>エジプト、ワディ・アル・ヒタン</h3>
+                            <p>
+                                エジプトのワディ・アル・ヒタン（鯨の谷）は、フィユム地区に位置し、
+                                約4,000万年前の古代鯨の化石が多数発見された場所です。これらの化石は、
+                                鯨の進化過程を理解する上で重要で、海から陸への移行を示しています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://worldheritage-mania.com/wp-content/uploads/2022/04/shutterstock_1570876789.jpg" loading="lazy">
+                            <h3>セネガル、ゴレ島</h3>
+                            <p>
+                                セネガルのゴレ島は、ダカールの沖合に位置する小さな島で、
+                                17世紀から19世紀にかけての大西洋奴隷貿易の中心地でした。
+                                奴隷の家や歴史的建造物が残り、奴隷貿易の残酷な歴史を物語っています。
+                            </p>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab Menu2 -->
+        <div class="tab-container" id="tab-container-2">
+            <ul class="tab-menu">
+                <li class="tab-link active" data-tab="tab1">北アメリカ</li>
+                <li class="tab-link" data-tab="tab2">南アメリカ</li>
+                <li class="tab-link" data-tab="tab3">オセアニア</li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab1" class="tab-pane active">
+                    <h2>北アメリアの世界遺産</h2>
+                    <div class="sub-content-container">
+                        <div class="sub-content">
+                            <img src="https://wallpapercave.com/wp/wp11557574.jpg" loading="lazy">
+                            <h3>アメリア、イエローストーン公園国立公園</h3>
+                            <p>
+                                アメリア、イエローストーン国立公園は、アメリカ初の国立公園で、
+                                広大な自然と地熱活動が魅力。滝や温泉、豊かな野生動物が見どころです。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://www.us-qianzheng.com/Public/Home/images/lb01.jpg" loading="lazy">
+                            <h3>アメリア、自由の女神</h3>
+                            <p>
+                                アメリア、自由の女神は、ニューヨーク港に立つ象徴的な像で、
+                                フランスからアメリカへの独立100周年の贈り物です。自由と民主主義のシンボルとして、
+                                多くの人々に感動を与えています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://i.pinimg.com/originals/a0/a3/08/a0a308ec9c0d4fa32f844b5bf8d389bb.jpg" loading="lazy">
+                            <h3>アメリア、グランドキャニオン国立公園</h3>
+                            <p>
+                                アメリア、グランドキャニオン国立公園は、アリゾナ州に位置し、
+                                壮大な峡谷の景観で知られています。色とりどりの岩層と深い渓谷が特徴で、
+                                地球の歴史を感じさせる絶景スポットです。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://images.squarespace-cdn.com/content/v1/555b687ce4b01d104a0a7927/7090242f-1cc6-4427-8f3f-4d0a9830e70a/shutterstock_1374767762.jpg" loading="lazy">
+                            <h3>カナダ、ナイアガラの滝</h3>
+                            <p>
+                                カナダ、ナイアガラの滝は、オンタリオ州に位置する壮大な滝で、
+                                アメリカ側の滝と合わせて世界的に有名です。
+                                圧倒的な水量と迫力のある景観が訪れる人々を魅了しています
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://i.pinimg.com/originals/9c/cf/31/9ccf312cd5a6d60198221da439b34956.jpg" loading="lazy">
+                            <h3>カナダ、バナフ国立公園 </h3>
+                            <p>
+                                カナダ、バナフ国立公園は、アルバータ州のロッキー山脈に広がる美しい公園で、
+                                雪をかぶった山々、青い湖、豊かな野生動物が特徴です。
+                                絶景の湖やハイキングコースが魅力的です。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/f6/55/bb/amigo-tours-day-tours.jpg?w=2000&h=1600&s=1" loading="lazy">
+                            <h3>メキシコ、マヤ遺跡チチェン・イッツァ </h3>
+                            <p>
+                                メキシコ、マヤ遺跡チチェン・イッツァは、古代マヤ文明の壮大な遺跡で、
+                                特にククルカンのピラミッド（エル・カスティーヨ）が有名です。
+                                精巧な建築と天文学的知識を持つ遺跡で、ユネスコの世界遺産に登録されています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1280,w_2277,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1492204658/galleries/2013/12/03/incredible-unesco-sites-in-danger-of-disappearing-photos/danger-unesco-belize_bek0hi"loading="lazy">
+                            <h3>ベリーズ、バリア・リーフ保護区群</h3>
+                            <p>
+                                ベリーズ、バリア・リーフ保護区群は、カリブ海に位置する世界最大のバリアリーフで、
+                                豊かな海洋生物と珊瑚礁が魅力です。ユネスコの世界遺産に登録されており、
+                                ダイビングやシュノーケリングに最適なスポットです。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://worldheritage-mania.com/wp-content/uploads/2022/04/shutterstock_1809697957.jpg" loading="lazy">
+                            <h3>コスタリカ、ココ島国立公園</h3>
+                            <p>
+                                コスタリカ、ココ島国立公園は、太平洋に浮かぶ孤立した島で、豊かな海洋生物と原生林が魅力です。
+                                ダイビングスポットとしても有名で、
+                                深海の生物や海洋の巨人たちに出会える場所です。
+                                ユネスコの世界遺産にも登録されています。   
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://worldheritage.online/wp-content/uploads/2021/11/32242494962_8a3eb1db65_o.jpg" loading="lazy">
+                            <h3>パナマ、パナマ旧市街とパナマ・ビエホの考古遺跡</h3>
+                            <p>
+                                パナマ、パナマ旧市街とパナマ・ビエホの考古遺跡は、
+                                歴史的な価値が高いエリアです。パナマ旧市街は、スペイン植民地時代の建築が残る美しい地区で、
+                                パナマ・ビエホはかつてのパナマ市の遺跡です。どちらもユネスコの世界遺産に登録されています。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="tab-pane">
+                    <h2>南アメリアの世界遺産</h2>
+                    <div class="sub-content-container">
+                        <div class="sub-content">
+                            <img src="https://holidayswithkids.com.au/wp-content/uploads/2018/06/Galapagos-Island.jpg" loading="lazy">
+                            <h3>エクアドル、ガラパゴス諸島</h3>
+                            <p>
+                                エクアドルのガラパゴス諸島は、
+                                独自の生態系と多様な固有種で知られ、
+                                進化論の研究にも影響を与えた世界遺産です。美しい自然と野生動物の宝庫です。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://ie.u-ryukyu.ac.jp/~e105737/WorldHeritage/south_america/peru/nasca.jpeg" loading="lazy">
+                            <h3>ペルー、ナスカとフマナ平原の地上絵</h3>
+                            <p>
+                                ペルーのナスカとフマナ平原の地上絵は、巨大な地上絵が描かれた遺跡で、
+                                紀元前200年から紀元後600年頃に作られました。用途や意味は謎に包まれており、
+                                ユネスコの世界遺産に登録されています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://d1d37e9z843vy6.cloudfront.net/jp/images/3583705/5724aa157162f47f905cb4173985055d799248f2.jpeg" loading="lazy">
+                            <h3>アルゼンチン、ロス・グラシアレス国立公園</h3>
+                            <p> 
+                                アルゼンチンのロス・グラシアレス国立公園は、壮大な氷河が広がる自然保護区で、
+                                特にペリト・モレノ氷河が有名です。多様な氷河と山々の景観が魅力で、
+                                ユネスコの世界遺産に登録されています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://stat.ameba.jp/user_images/20220217/10/toshheritage/1e/c2/j/o1600106815076216622.jpg" loading="lazy">
+                            <h3>ブラジル、リオデジャネイロのカリオカの景観</h3>
+                            <p>
+                                ブラジルのリオデジャネイロのカリオカの景観は、シュガーローフ山、コルコバードのキリスト像、
+                                コパカバーナビーチなど、象徴的な自然景観と都市景観を含む世界遺産です。
+                                美しい海岸線と山々が織り成す絶景が特徴です。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://www.shigen.net/wp-content/uploads/2022/12/25110328_m.jpg" loading="lazy">
+                            <h3>チリ、ラパ・ヌイ国立公園</h3>
+                            <p>
+                                チリのラパ・ヌイ国立公園は、イースター島に位置し、謎のモアイ像で有名です。
+                                ポリネシア文化の影響が色濃く残るこの地域は、ユネスコの世界遺産に登録されています。
+                                独特の石像と歴史的な遺跡が見どころです。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://worldheritagesite.xyz/wp-content/uploads/2015/01/%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E3%83%BB%E3%82%B3%E3%83%AD%E3%81%A8%E3%81%9D%E3%81%AE%E6%B8%AF.jpg" loading="lazy">
+                            <h3>ベネズエラ、コロとその港</h3>
+                            <p>
+                                ベネズエラのコロとその港は、スペイン植民地時代の歴史を色濃く残す地域で、美しい植民地建築が立ち並ぶ歴史的都市です。
+                                ユネスコの世界遺産に登録されており、
+                                コロはその保存状態の良さと歴史的な価値が評価されています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://alfainter.co.jp/wp-content/uploads/2019/07/manaus_1.jpg" loading="lazy">
+                            <h3>ブラジル、アマゾン熱帯雨林保護区群</h3>
+                            <p>
+                                ブラジルのアマゾン熱帯雨林保護区群は、
+                                世界最大の熱帯雨林で、豊かな生態系と多様な動植物が特徴です。
+                                ユネスコの世界遺産に登録されており、環境保護の重要な区域です。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://cdn.getyourguide.com/img/location/54b557a3a8cb0.jpeg/88.jpg" loading="lazy">
+                            <h3>エクアドル、キト</h3>
+                            <p>
+                                エクアドルのキトは、歴史的な旧市街がユネスコの世界遺産に登録されています。
+                                美しい植民地時代の建築物が立ち並び、バロック様式の教会や広場が特徴的です。キトの旧市街は、
+                                スペイン植民地時代の建築や街並みがよく保存されており、歴史的な魅力を感じられます。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://nandiperu.com/wp-r03/wp-content/uploads/2021/05/Akira-Inoue-nandi-peru-Huaraz-ChavindeHuantar1.jpg" loading="lazy">
+                            <h3>ペルー、チャビン遺跡</h3>
+                            <p>  
+                                ペルーのチャビン遺跡は、紀元前900年から紀元前200年頃に栄えた古代チャビン文化の中心地で、
+                                ユネスコの世界遺産に登録されています。複雑な石造建築と宗教的な遺物が特徴で、
+                                当時の高度な技術と宗教的な儀式が伺えます
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab3" class="tab-pane">
+                    <h2>オセアニアの世界遺産</h2>
+                    <div class="sub-content-container">
+                        <div class="sub-content">
+                            <img src="https://world-heritage.net/wp/wp-content/uploads/2021/05/uluru_1-1280x720.jpg" loading="lazy">
+                            <h3>オーストラリア、ウルル-カタ・ジュタ国立公園</h3>
+                            <p>
+                                ウルル-カタ・ジュタ国立公園は、オーストラリアのノーザンテリトリーに位置し、
+                                アボリジニの聖地であるウルル（エアーズロック）とカタ・ジュタ（オルガ）から成る自然遺産です。
+                                壮大な岩の景観と、地域固有の動植物、アボリジニの文化的価値が融合した地域です。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://www.publicdomainpictures.net/pictures/300000/velka/opera-house-15622011681ZF.jpg" loading="lazy">
+                            <h3>オーストラリア、シドニーオペラハウス</h3>
+                            <p>
+                                シドニーオペラハウスは、オーストラリア・シドニーの象徴的な建築物で、
+                                独特な貝殻型の屋根が特徴の文化施設で、2007年に世界遺産に登録されました。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://static.amanaimages.com/imgroom/cen3tzG4fTr7Gtw1PoeRer/02861/02861003151.jpg" loading="lazy">
+                            <h3>オーストラリア、アボリジニの岩絵群</h3>
+                            <p>                              
+                                アボリジニの岩絵群は、オーストラリアの岩壁に描かれたアボリジニの古代絵画で、
+                                文化的・宗教的な意味を持つ。多くの遺跡が世界遺産に登録され、数万年の歴史を示しています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://www.bing.com/th?id=OHR.LupineNZ_JA-JP3080591976_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp" loading="lazy">
+                            <h3>ニュージーランド、ニュージーランド南島の自然景観</h3>
+                            <p> 
+                                ニュージーランド南島の自然景観は、氷河、山脈、湖など多様な自然環境が広がる地域で、
+                                南島の壮大な自然美と生物多様性を代表しています。
+                                域は、世界遺産に登録されており、世界でも最も美しい自然景観の一つとされています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://motitabi.com/wp-content/uploads/2018/11/Dmjh2j-UYAEvXyp.jpg" loading="lazy">
+                            <h3>ニュージーランド、テ・プイアのジオサイトとホワイト島</h3>
+                            <p>                            
+                                ニュージーランド、テ・プイアのジオサイトとホワイト島は、地熱活動と火山活動が顕著な地域です。
+                                テ・プイアでは温泉や間欠泉、
+                                泥火山が見られ、ホワイト島は活火山で硫黄ガスや噴煙が特徴です。
+                                これらの地質的な特性が自然遺産として評価されています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://worldheritagesite.xyz/wp-content/uploads/2015/12/%E3%83%88%E3%83%B3%E3%82%AC%E3%83%AA%E3%83%AD%E5%9B%BD%E7%AB%8B%E5%85%AC%E5%9C%92-6.jpg"loading="lazy">
+                            <h3>ニュージーランド、トンガリロ国立公園</h3>
+                            <p>
+                                テ・プイアのジオサイトとホワイト島は、ニュージーランド北島の地熱活動と火山活動が見られる地域です。
+                                テ・プイアでは間欠泉や温泉、泥火山が見られ、ホワイト島は活火山で硫黄ガスや噴煙が特徴です。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://palautimes.jp/wp-content/uploads/2019/11/palau_worldheritage00.jpg" loading="lazy">
+                            <h3>パラオ、ロックアイランド</h3>
+                            <p>
+                                パラオのロックアイランドは、南部に位置する群島で、透明な海と豊かな珊瑚礁が広がっています。
+                                生物多様性が豊かで、2012年に世界遺産に登録されました。
+                                自然の美しさと保護が評価されています。
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://worldheritagesite.xyz/wp-content/uploads/2014/10/%E3%83%95%E3%82%A7%E3%83%8B%E3%83%83%E3%82%AF%E3%82%B9%E8%AB%B8%E5%B3%B6%E4%BF%9D%E8%AD%B7%E5%9C%B0%E5%9F%9F-2-scaled.jpg" loading="lazy">
+                            <h3>キリバス、フェニックス諸島</h3>
+                            <p>      
+                                キリバスのフェニックス諸島は、広大な海洋保護区で、
+                                珊瑚礁と無人島が特徴です。豊かな海洋生物と未開発の自然環境が評価され、
+                                2010年に世界遺産に登録されました。 
+                            </p>
+                        </div>
+                        <div class="sub-content">
+                            <img src="https://skyticket.jp/guide/wp-content/uploads/8073768176_65ad66d9ae_k-680x368.jpg" loading="lazy">
+                            <h3>パプアニューギニア、クックの初期農業遺跡</h3>
+                            <p>
+                                パプアニューギニア、クックの初期農業遺跡は、
+                                古代の段々畑や農業構造物が保存された遺跡です。
+                                農業の歴史と技術を示し、2010年に世界遺産に登録されています。
+                            </p>
+                        </div>                   
                     </div>
                 </div>
             </div>
@@ -215,7 +675,7 @@
         <div class="footer-nav">
             <ul class="footer-title">
                 <li><a href="index.html">トップページ</a></li>
-                <li><a href="portfolio">ポートフォリオ</a></li>
+                <li><a href="portfolio.html">ポートフォリオ</a></li>
                 <li><a href="contact.html">お問い合わせ</a></li>
             </ul>
             <p class="footer-under">&copy; 2024 ボールドン ノエ. All rights reserved.</p>
@@ -225,5 +685,5 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- カスタムスクリプト -->
     <script src="./js/scripts.js"></script>
-    <script src="js/swiper.js"></script>
-    <script>
+    <script src="/js/swiper world.js"></script>
+
