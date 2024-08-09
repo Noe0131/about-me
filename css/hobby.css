@@ -1,0 +1,111 @@
+/* .welcome要素の調整 */
+.welcome3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: gold;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+/* 全体のスタイル */
+.pikumin-game {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 800px; /* 必要に応じて調整 */
+    position: relative; /* テキストエリアを絶対配置するため */
+    overflow: hidden; /* コンテンツがはみ出さないように */
+}
+
+/* 画像のスタイル */
+.pikumin-game-img {
+    position: absolute; /* 絶対位置に設定 */
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img-denfaminicogamer.com/wp-content/uploads/2022/09/WS001532.jpg'); /* 画像URLを指定 */
+    background-size: cover; /* 画像をカバーする */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+}
+
+/* テキストエリアのスタイル */
+.pikumin-game-what {
+    position: absolute; /* 絶対位置に設定 */
+    width: 40%;
+    height: 21%;
+    background-color: ivory;
+    margin-top: 10rem;
+    margin-left: 5rem;
+    border-radius: 10px;
+    box-shadow:  5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.pikumin-game-what h1 {
+    color: green;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.pikumin-game-what p {
+    color: #824600;
+    margin: 1rem;
+    font-size: 20px;
+}
+
+.pikumin {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pikumin-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://hiro-game1414.com/wp-content/uploads/2019/03/66c19942ab4ba346fdb64ccc04cde373-2.png);
+    background-size: cover;
+    background-position: 90% 90%;
+    background-repeat: no-repeat;
+}
+
+.pikumin-what {
+    position: absolute; /* 絶対位置に設定 */
+    width: 40%;
+    height: 21%;
+    background-color: ivory;
+    margin-top: 10rem;
+    margin-left: 50rem;
+    border-radius: 10px;
+    box-shadow:  5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.pikumin-what h1 {
+    color: green;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.pikumin-what p {
+    color: #824600;
+    margin: 1rem;
+    font-size: 20px;
+}
+
+.background-pikumin img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.altema.jp/pikmin4/uploads/2023/07/2023y07m05d_1926550376.jpg');
+    background-size: cover;
+    background-position: 90% 90%;
+    background-repeat: no-repeat;
+}

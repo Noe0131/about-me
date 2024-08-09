@@ -1,32 +1,19 @@
-// トップページのスライド
-// ページが完全に読み込まれたときに、指定された関数を実行する
 document.addEventListener('DOMContentLoaded', function () {
-    // #splideというIDを持つHTML要素に新しいSplideスライダーを初期化する
+    // 新しいSplideスライダーを #splide 要素に初期化する
     new Splide('#splide', {
-        // スライダーをループモードに設定する
-        type: 'loop',
-        // 1ページに表示されるスライドの数を2に設定する
-        perPage: 2,
-        // 自動再生
-        autoplay: true,
-        // 自動再生の間隔（ミリ秒）
-        interav: 3000,
-        // マウスホバー時に自動再生を一時停止
-        pausOnHover: true,
-        // スライダーが中央にフォーカスされるように設定する
-        focus: 'center',
-        // 各スライド間の間隔を1remに設定する
-        gap: '0.5rem',
-        // レスポンシブ設定を指定する
+        type: 'loop', // スライダーをループモードに設定
+        perPage: 2, // 1ページに表示されるスライドの数を2に設定
+        autoplay: true, // 自動再生を有効にする
+        interval: 3000, // 自動再生の間隔を3000ミリ秒（3秒）に設定（修正: 'interav' から 'interval' に修正）
+        pauseOnHover: true, // マウスホバー時に自動再生を一時停止（修正: 'pausOnHover' から 'pauseOnHover' に修正）
+        focus: 'center', // スライダーが中央にフォーカスされるように設定
+        gap: '0.5rem', // 各スライド間の間隔を0.5remに設定
         breakpoints: {
-            // 画面幅が767ピクセル以下の場合に適用される設定
             767: {
-                // 1ページに表示されるスライドの数を1に設定する
-                perPage: 1,
+                perPage: 1, // 画面幅が767ピクセル以下の場合、1ページに表示されるスライドの数を1に設定
             },
         },
-    // Splideインスタンスをマウントして、スライダーを表示する
-    }).mount();
+    }).mount(); // Splideインスタンスをマウントして、スライダーを表示する
 });
 
 

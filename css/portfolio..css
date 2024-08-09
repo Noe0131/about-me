@@ -1,0 +1,63 @@
+.section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: whitesmoke;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.section h2 {
+    margin-bottom: 1.5rem;
+    color: royalblue;
+    font-size: 20px;
+}
+ h3 {
+    margin-bottom: 1rem;
+    font-size: large;
+}
+
+h4 {
+    margin-top: 1rem;
+    font-size: small;
+}
+
+.html-evaluation {
+    color: orangered;
+    font-size: 17px;
+}
+
+.css-evaluation {
+    color: turquoise;
+    font-size: 17px;
+}
+
+.js-evaluation {
+    color: gold;
+    font-size: 17px;
+}
+
+.photoshop-evaluation {
+    color: skyblue;
+    font-size: 17px;
+}
+
+.illustrator-evaluation {
+    color: darkorange;
+    font-size: 17px;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    font-size: 10px;
+}
+.profile-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 50%;
+}
+
+.contact-info p {
+    font-size: medium;
+}

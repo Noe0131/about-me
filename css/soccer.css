@@ -128,6 +128,11 @@
     flex: 1 1 calc(50% - 1rem); /* 2列にするために幅を設定 */
 }
 
+.video-item h1 {
+    color: cornflowerblue;
+    font-size: 20px;
+}
+
 .video-item iframe {
     width: 100%; /* 親要素の幅に合わせる */
     height: 400px; /* 高さは自動で調整 */
