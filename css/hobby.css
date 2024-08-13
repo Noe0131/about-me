@@ -35,7 +35,7 @@
 .pikumin-game-what {
     position: absolute; /* 絶対位置に設定 */
     width: 40%;
-    height: 21%;
+    height: 25%;
     background-color: ivory;
     margin-top: 10rem;
     margin-left: 5rem;
@@ -57,6 +57,50 @@
     font-size: 20px;
 }
 
+.pikumin-ochin-background {
+    width: 100%;
+    height: 500px;
+    background-image: url('https://www.famitsu.com/images/000/308/956/z_64a7e0a460c72.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 0.5rem;
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 水平方向の中央に配置 */
+    align-items: start;
+}
+
+.pikumin-ochin {
+    position: relative;
+    font-size: 2rem;
+    background-color: ivory;
+    box-shadow:  5px 5px 3px rgba(0, 0, 0, 0.5);
+    padding: 0.5rem; /* 上部に0.5remのパディング */
+    width: auto;
+    margin-top: 1rem; /* さらに上部から0.5remのマージンを追加 */
+    border-radius: 10px;
+    display: flex;
+}
+
+.pikumin-ochin::before {
+    content: '';
+    width: 50px; /* 画像の幅 */
+    height: 50px; /* 画像の高さ */
+    background-image: url('https://www.nintendo.com/jp/switch/ampya/partners/img/img_ottin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0.7rem; /* テキストと画像の間のスペース */
+    margin-top: -0.5rem;
+
+}
+
+.pikumin-ochin h1 {
+    color: green;
+    text-align: center;
+    font-weight: 600;
+}
+
 .pikumin {
     margin-top: 0.5rem;
     width: 100%;
@@ -69,7 +113,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(https://hiro-game1414.com/wp-content/uploads/2019/03/66c19942ab4ba346fdb64ccc04cde373-2.png);
+    background-image: url('https://hiro-game1414.com/wp-content/uploads/2019/03/66c19942ab4ba346fdb64ccc04cde373-2.png');
     background-size: cover;
     background-position: 90% 90%;
     background-repeat: no-repeat;
@@ -100,12 +144,84 @@
     font-size: 20px;
 }
 
-.background-pikumin img {
-    position: absolute;
+.top-ochin-img {
+    position: relative;
+    margin-top: 0.5rem;
     width: 100%;
-    height: 100%;
-    background-image: url('https://img.altema.jp/pikmin4/uploads/2023/07/2023y07m05d_1926550376.jpg');
+    height: 550px;
+    background-image: url('https://www.gamespot.com/a/uploads/original/1585/15855271/4166913-switch_pikmin4_scrn_02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* 中央に背景画像を配置 */
+}
+
+.top-ochin {
+    position: absolute;
+    width: 30%;
+    height: 250px;
+    background-image: url('https://www.nintendo.co.kr/switch/ampya/img/ottinslide-bg.png');
+    background-size: cover;
+    background-position: center; /* 中央に背景画像を配置 */
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+}
+
+.ochin {
+    text-align: start; /* テキストを中央に配置 */
+}
+
+.ochin h1 {
+    text-align: center;
+    font-size: 1.6rem; /* フォントサイズを少し大きくして視認性を向上 */
+    font-weight: 600;
+    color: orange;
+    margin-top: 3rem;
+}
+
+.ochin p {
+    font-size: 1.2rem; /* フォントサイズを調整 */
+    color: white;
+    padding: 0.5rem;
+}
+
+ 
+/* 最後 */
+.imo  {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://images.stopgame.ru/games/logos/22546/c1280x412/5TKSyhGWc0E5N45qdxpmdQ/pikmin_4-hero_3.jpg');
     background-size: cover;
     background-position: 90% 90%;
-    background-repeat: no-repeat;
+    margin-top: 0.5rem;
 }
+
+@media (max-width: 767px) {
+    .pikumin-game-what,
+    .pikumin-what {
+    width: 80%; /* テキストエリアの幅を80%に */
+    height: auto; /* 高さを自動調整 */
+    margin: 1rem auto; /* 上下左右に自動マージンを追加し、中央揃え */
+    margin-left: 1rem;
+    padding: 0.5rem; /* 内側の余白を1remに設定 */
+    }
+
+    .pikumin-game-what h1,
+    .pikumin-what h1 {
+        font-size: 20px; /* フォントサイズを調整 */
+    }
+
+    .pikumin-game-what p,
+    .pikumin-what p {
+        font-size: small;
+    }
+
+    .ochin h1 {
+        font-size: 0.9rem;
+    }
+
+    .ochin p {
+        font-size: 0.7rem;
+    }
+}
+

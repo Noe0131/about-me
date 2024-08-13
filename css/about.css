@@ -54,3 +54,13 @@
 .blnk {
     margin-bottom: 70px;
 }
+
+@media screen  and (max-width: 767px) {
+    .self-introduction h2, .hobby-skill h2, .like-item h2 {
+        font-size: 15px;
+    }
+
+    .self-introduction p, .hobby-skill p, .like-item p {
+        font-size: 12px;
+    }
+}

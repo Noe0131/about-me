@@ -13,8 +13,9 @@
     font-size: 50px;
     font-weight: 600;
     color: goldenrod;
-    transform: translateX(40%) translateY(150%);
-    z-index: 10;
+    align-items: center;
+    transform: translateX(40%) translateY(100%);
+    z-index: 1;
 }
 
 /* スワイパーコンテナのスタイル */
@@ -50,10 +51,10 @@
 .background-black img,
 .background-lightblue img,
 .background-lightgreen img {
-    width: 50%;
+    width: 100%;
     height: 100%;
     object-fit: cover; /* 画像が親要素に合わせてトリミングされるように設定 */
-    position: absolute;
+    /* position: absolute; */
     border-radius: 15px 0 0 15px;
 }
 
@@ -65,10 +66,17 @@
     z-index: 3;
 }
 
+.pikmin-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pikmin-box__body {
+    width: 100%;
+    padding: 10%;
+}
+
 .swiper-slide h2 {
-    position: absolute;
-    right: 20%;
-    top: 10%;
     margin: 0; /* デフォルトのマージンをリセット */
     font-size: 50px; /* 必要に応じてフォントサイズを変更 */
     font-weight: 600;
@@ -112,19 +120,13 @@
 }
 
 .swiper-slide h3 {
-    position: absolute;
-    right: 20%;
-    top: 20%;
     margin: 0;
     color: whitesmoke;
     font-size: 30px;
 }
 
+
 .swiper-slide p {
-    position: absolute;
-    right: 80px; /* 右からの距離 */
-    top: 40%; /* 親要素の高さの50%に設定 */
-    transform: translateY(-50%); /* 自身の高さの半分だけ上に移動して中央に配置 */
     margin: 0; /* デフォルトのマージンをリセット */
     color: white;
     font-size: 20px;
@@ -207,4 +209,39 @@
     background-image: url('https://pikmin.wiki.gallery/images/thumb/0/03/Glow_Pikmin.png/270px-Glow_Pikmin.png');
     background-size: cover; /* 画像をバレット内に合わせる */
     background-position: center; /* 画像を中央に配置 */
+}
+
+@media (max-width: 767px)  {
+    .background h1 {
+        font-size: 40px;
+    }
+    
+    .swiper-slide h2 {
+        font-size: 30px;
+    }
+
+    .swiper-slide h3 {
+        font-size: 20px;
+    }
+
+    .swiper-slide p {
+       font-size: small;
+    }
+
+    .swiper-slide iframe {
+        width: 170px;
+        height: 170px;
+    }
+
+    .swiper-pagination {
+        display: flex;
+        justify-content: center; /* ページネーションボタンを中央揃え */
+        gap: 1px; /* ボタン間の隙間を設定 */   
+        flex-wrap: nowrap;
+    }
+
+    .swiper-pagination-bullet {
+        width: 50px; /* ボタンサイズを縮小 */
+        height: 50px; /* ボタンサイズを縮小 */
+    }
 }
