@@ -1,3 +1,4 @@
+
 /* Swiperのスタイル */
 .swiper-container {
     width: 100%; /* スライダーコンテナをページ全体の幅に拡大 */
@@ -21,32 +22,41 @@
 
 .scroll-bar-explanation {
     position: absolute; /* 絶対位置で配置 */
-    bottom: 1rem; /* スライドの下端に配置 */
-    right: 5rem; /* スライドの右端に配置 */
+    bottom: 0.5rem; /* スライドの下端に配置 */
+    right: 3rem; /* スライドの右端に配置 */
     z-index: 2; /* 画像よりも前面に表示 */
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 2rem;
-    background-image: url('https://i.pinimg.com/736x/d6/60/c1/d660c1b8d61a2ffba4a86551506cdac7.jpg');
+    border-radius: 1rem;
+    background-image: url('https://images5.alphacoders.com/136/thumb-1920-1366970.png');
     background-position: center center; /* 背景画像を要素の中央に配置 */
     background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
     background-size: cover; /* 背景画像が要素全体をカバーするようにサイズを調整する */
     height: auto;
-    padding: 10px;
+    padding: 4rem 1rem 0.3rem 1rem; /* トップ: 2rem、右: 1rem、下: 1rem、左: 1rem */
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 要素を縦に並べる */
 }
 
 .scroll-bar-explanation h1 {
-    font-size: clamp(18px, 3vw, 24px);
+    position: relative;
+    font-size: clamp(16px, 2.5vw, 22px);
     color: white;
     font-weight: 600;
+    top: -3.5rem;
 }
 
-.life, .make, .fishing, .bridge, .house, .museum, .event {
+.scroll-bar-explanation p {
+    position: relative;
+    font-size: clamp(10px, 1.5vw, 16px); /* 最小: 10px、中間: 1.5vw、最大: 16px */
+}
+
+.life {
     position: absolute;
     top: 1rem;
     right: 3rem;
     z-index: 10;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
-    border-radius: 2rem;
+    border-radius: 1rem;
     background-image: url('https://i5.walmartimages.com/dfw/4ff9c6c9-27ef/k2-_ef37510d-a193-4c65-af23-430ef7ad10e4.v1.jpg');
     background-position: 32% 32%;
     background-repeat: no-repeat;
@@ -55,7 +65,7 @@
     padding: 40px;
 }
 
-.life h1, .make h1, .fishing h1, .bridge h1, .house h1, .museum h1, .event h1 {
+.life h2 {
     position: relative;
     z-index: 11;
     top: -2rem;
@@ -113,6 +123,10 @@
 
     .swiper-slide img {
         height: 450px;
+    }
+
+    .scroll-bar-explanation {
+        bottom: 2rem;
     }
 
     .scroll-bar {
