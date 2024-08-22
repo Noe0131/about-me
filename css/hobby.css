@@ -31,16 +31,17 @@
     background-repeat: no-repeat; /* 画像を繰り返さない */
 }
 
-/* テキストエリアのスタイル */
 .pikumin-game-what {
-    position: absolute; /* 絶対位置に設定 */
+    position: absolute;
     width: 40%;
     height: 25%;
     background-color: ivory;
     margin-top: 10rem;
     margin-left: 5rem;
     border-radius: 10px;
-    box-shadow:  5px 5px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* 縦方向にスクロールを許可 */
+    padding: 1rem; /* 内容が境界に直接触れないようにパディングを追加 */
 }
 
 .pikumin-game-what h1 {
@@ -120,16 +121,19 @@
 }
 
 .pikumin-what {
-    position: absolute; /* 絶対位置に設定 */
+    position: absolute;
     width: 40%;
     height: 21%;
     background-color: ivory;
-    margin-top: 10rem;
-    margin-left: 50rem;
+    top: 10rem; /* margin-top ではなく top を使用 */
+    left: 70%; /* 要素の左端を画面の中央に合わせる */
+    transform: translateX(-50%); /* 要素の中央を画面の中央に合わせる */
     border-radius: 10px;
-    box-shadow:  5px 5px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* 縦方向にスクロールを許可 */
 }
 
+/* タイトルのスタイル */
 .pikumin-what h1 {
     color: green;
     margin-top: 1rem;
@@ -138,11 +142,13 @@
     font-weight: 600;
 }
 
+/* テキストのスタイル */
 .pikumin-what p {
     color: #824600;
     margin: 1rem;
     font-size: 20px;
 }
+
 
 .top-ochin-img {
     position: relative;
@@ -205,6 +211,13 @@
     margin-left: 1rem;
     padding: 0.5rem; /* 内側の余白を1remに設定 */
     }
+    
+    .pikumin-what {
+        left: 0;
+        transform: none; /* 変形をリセット */
+        width: 80%; /* 画面に収まるように幅を調整 */
+        margin-left: 10%; /* 水平中央揃え */
+    }
 
     .pikumin-game-what h1,
     .pikumin-what h1 {
@@ -215,6 +228,7 @@
     .pikumin-what p {
         font-size: small;
     }
+
 
     .ochin h1 {
         font-size: 0.9rem;

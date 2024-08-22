@@ -252,6 +252,10 @@ body {
     font-size: 14px;
   }
 
+  .sub-content {
+    flex: 0 0 calc(50% - 1rem); /* 横に2つ並べるための幅に変更 */
+  }
+
   .sub-content h3 {
     font-size: 14px;
   }

@@ -2,6 +2,7 @@
 /* Swiperのスタイル */
 .swiper-container {
     width: 100%; /* スライダーコンテナをページ全体の幅に拡大 */
+    height: auto;
     position: relative; /* スライダー内の要素の位置を相対的に配置 */
     z-index: 0; /* スライダー全体のz-indexを0に設定し、他の要素より後ろに配置 */
     margin-top: 0.5rem;
@@ -78,6 +79,7 @@
 
 /* ---------------------------------- */
 /* スクロールバーのスタイル */
+
 .my-scrollbar {
     position: absolute; /* スクロールバーをスライダー内で絶対位置に配置 */
     bottom: 10px; /* スクロールバーをスライダーの底部に配置 */
@@ -87,25 +89,26 @@
 
 /* スクロールバーの線 */
 .scroll-bar {
-    width: 70%; /* スクロールバーの幅をスライダー幅の50%に設定 */
+    width: 70%; /* スクロールバーの幅をスライダー幅の70%に設定 */
     height: 20px; /* スクロールバーの高さを20pxに設定 */
     display: flex; /* フレックスボックスを使用してバーの内容を配置 */
     background-image: url('https://i.pinimg.com/originals/cc/7f/ca/cc7fcaa994ef146b894915d4581342ed.jpg'); /* 背景に画像を設定 */
     background-size: cover; /* 背景画像を要素のサイズに合わせてカバー */
     background-position: center; /* 画像の位置を中央に設定 */
     border-radius: 2rem; /* スクロールバーの角を丸くする */
-    transform: translateY(-150%);
+    transform: translateY(-150%); /* スクロールバーをさらに上に配置 */
     z-index: 11; /* スクロールバーの背景を他の要素より前面に表示 */
 }
 
 /* スクロールバーの線 */
 .scroll-bar-line {
     width: 100%; /* スクロールバーの線をスクロールバー幅全体に設定 */
-    height: px; /* スクロールバーの線の高さを20pxに設定 */
+    height: 20px; /* スクロールバーの線の高さを20pxに設定 */
     border-radius: 5px; /* 線の角を丸くする */
     position: relative; /* ドラッグボタンの位置を相対的に配置 */
     z-index: 11; /* ドラッグボタンを他の要素より前面に表示 */
 }
+
 
 /* 横に配置する画像 */
 .scroll-bar img {
@@ -115,8 +118,9 @@
     position: absolute; /* 画像をスクロールバー内で絶対位置に配置 */
     left: 0; /* 画像をスクロールバーの左端に配置 */
     z-index: 16; /* 画像を他の要素より前面に表示 */
-    transform: translateY(-80%); /* 画像を上下方向に少し移動させる */
+    transform: translateY(-80%); /* 画像を少し上に配置 */
 }
+
 
 /* メディアクエリ */
 @media (max-width: 767px) {
