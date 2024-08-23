@@ -50,7 +50,7 @@
     display: inline-block; /* 要素をインラインブロックにする */
     width: 18px; /* 画像の幅 */
     height: 18px; /* 画像の高さ */
-    background-image: url('/img/index/arrow-303271_1280.png'); /* 画像のパス */
+    background-image: url('img/index/arrow-303271_1280.png'); /* 画像のパス */
     background-size: cover; /* 画像を要素に合わせてサイズ調整 */
     background-repeat: no-repeat; /* 画像を繰り返さない */
     margin-right: 5px; /* 画像とテキストの間の余白 */
