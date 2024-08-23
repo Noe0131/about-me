@@ -52,7 +52,7 @@
 .background-lightblue img,
 .background-lightgreen img {
     width: 100%;
-    height: 100%;
+    height: 600px;
     object-fit: cover; /* 画像が親要素に合わせてトリミングされるように設定 */
     /* position: absolute; */
     border-radius: 15px 0 0 15px;
