@@ -1,0 +1,114 @@
+.container {
+    margin-top: 0.5rem;
+    position: relative; /* 相対位置を指定 */
+    width: 100%;
+    height: 200px; /* 背景の高さを設定 */
+    background-image: url('https://illust-stock.com/wp-content/uploads/background-sinryoku.png');
+    background-position: center center;
+    background-size: cover; /* 背景画像をカバーするように設定 */
+    text-align: center;
+    max-width: none;
+    display: flex; /* Flexboxを使用 */
+    justify-content: center; /* 横方向に中央揃え */
+    align-items: center; /* 縦方向に中央揃え */
+}
+
+.content {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 要素を縦に並べる */
+    align-items: center; /* 中央揃え */
+    text-align: center; /* テキストを中央揃え */
+}
+
+.content a {
+    display: inline-block;
+    padding: 5px 5px; /* ボタンの内側の余白を設定 */
+    text-decoration: none; /* 下線を削除 */
+    color: white; /* テキストの色を設定 */
+    background-color: forestgreen; /* 背景色を設定 */
+    border-radius: 2rem; /* 角を丸くする */
+    font-size: clamp(20px, 2.6vw, 36px); /* フォントサイズをレスポンシブに調整 */
+    font-weight: bolder;
+    position: relative; /* 必要に応じてリンク要素を相対配置にします */
+    padding-right: 30px; /* 矢印がはみ出さないように右にスペースを追加 */
+}
+
+.content a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px; /* 矢印の位置を調整 */
+    transform: translateY(-50%) rotate(45deg); /* 中央に配置して45度回転 */
+    width: 6px;
+    height: 6px;
+    border-width: 2px 2px 0 0;
+    border-style: solid;
+    border-color: yellowgreen; /* 矢印の色を設定 */
+}
+
+.content a:hover {
+    background-color: darkgreen; /* ホバー時の背景色 */
+    color: gainsboro; /* ホバー時のテキスト色 */
+    border: 1px solid forestgreen; /* ホバー時のボーダー */
+}
+
+.content a:hover::after {
+    border-color: floralwhite; /* ホバー時の矢印の色を変更 */
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    height: 180px;
+    z-index: 1;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    background-position: center center;
+    background-size: cover;
+}
+
+.splide__pagination {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%) translateX(50%);
+    z-index: 2;
+}
+
+.splide__slide {
+    position: relative;
+}
+
+.splide__pagination__page {
+    margin-bottom: 2px;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.splide__pagination__page.is-active {
+    background-color: forestgreen;
+}
+
+
+
+/* スクリーン幅が767px以下のときに適用するスタイル */
+@media (max-width: 767px) {
+    .container {
+        justify-content: flex-start; /* 左寄せに変更 */
+    }
+}

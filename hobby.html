@@ -18,11 +18,15 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- Splide.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
     <!-- カスタムスタイルシート（styles.css） -->
     <link rel="stylesheet" href="css/hobby.css">
     <link rel="stylesheet" href="css/header footer.css">
     <link rel="stylesheet" href="css/slider.css/swiper game.css">
     <link rel="stylesheet" href="css/slider.css/swiiper pikumin.css">
+    <link rel="stylesheet" href="css/slider.css/splide-to-animals.css">
 
 </head>
 <body>
@@ -67,7 +71,35 @@
         <div class="welcome3">
             <h1>ようこそ、ゲームへ。</h1>
         </div>
-
+        <!-- どうぶつの森リンク -->
+        <div class="container">
+            <div class="content">
+                <a href="animal.html"><h2>どうぶつの森</h2></a>
+            </div>
+            <div class="box">
+                <div id="image-slider" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="https://pbs.twimg.com/profile_images/931667200598933504/Dah0k6GC_400x400.jpg" alt="しずえ" loading="lazy">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://i.pinimg.com/474x/a2/b4/64/a2b4648747a6994509a1e9bf37e239c6.jpg" alt="たぬきち" loading="lazy">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://lh3.googleusercontent.com/oy-jRn9a-LwgTbgDSv-9JkgQpqCYe9Hla6KHQYsSsceLg8UDbVk_L71_fHLNo3NLL8K169MQUBQobBlbzpHnrWOom-uzi9rIJfsnzHHW-MQ" alt="ふーた" loading="lazy">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://auctions.c.yimg.jp/images.auctions.yahoo.co.jp/image/dr000/auc0105/users/dd49db3b6e5a1e110d603f4f580236e4b2762e05/i-img500x500-1588414260ju2ehw177913.jpg" alt="じゅん" loading="lazy">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="https://lh3.googleusercontent.com/abqUOEaNO0VKGdxoz0l8DwRBpm1W5u5bRz7Xi_F-neiTZq20q5UeCrmXIQDzjOelUZBXVRmeDFBfMKmXV2RT1pfl1VwIOiaovCr2-O6xV3_l" alt="らむね" loading="lazy">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="pikumin-game">
             <div class="pikumin-game-img">
                 <div class="pikumin-game-what">
@@ -228,9 +260,12 @@
 
     <!-- SwiperのJS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- SplideのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <!-- カスタムスクリプト -->
     <script src="js/scripts.js"></script>
     <script src="js/swiper/swiper game.js"></script>
     <script src="js/swiper/swiper pikumin.js"></script>
+    <script src="js/splide-to-animals.js"></script>
 </body>
 </html>
