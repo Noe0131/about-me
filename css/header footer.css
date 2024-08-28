@@ -1,5 +1,4 @@
 
-
 body {
     margin: 0;
     overflow-x: hidden; /* 横スクロールを無効に */
@@ -186,7 +185,7 @@ header {
     position: relative;
     bottom: 0;
 }  
- 
+
 .footer-title {
     display: flex;
     gap: 5%;

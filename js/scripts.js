@@ -78,10 +78,3 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeTabs('tab-container-1'); // -- 最初のタブメニューコンテナを初期化 --
     initializeTabs('tab-container-2'); // -- 二番目のタブメニューコンテナを初期化 --
 });
-
-
-
-
-
-  
-
