@@ -21,6 +21,17 @@
     z-index: 1;
 }
 
+iframe {
+    position: absolute; /* 動画を絶対位置に設定 */
+    top: 50%; /* スライドの中央に配置 */
+    left: 50%; /* スライドの中央に配置 */
+    transform: translate(-50%, -50%); /* 中央に正確に配置するためのトランスフォーム */
+    width: 45%; /* 動画の幅を設定 */
+    height: 50%; /* 動画の高さを設定 */
+    z-index: 20;
+    border-radius: 1rem;
+}
+
 .scroll-bar-explanation {
     position: absolute; /* 絶対位置で配置 */
     bottom: 0.5rem; /* スライドの下端に配置 */
@@ -76,6 +87,35 @@
     text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5); /* テキストシャドウ */
 }
 
+/* -------------------------------- */
+
+.box {
+    position: absolute;
+    top: 30%;
+    left: 50%; /* 水平方向の中央に配置 */
+    transform: translateX(-50%); /* 水平方向に中央揃え */
+    display: flex;
+    z-index: 100;
+    
+}
+
+/* ボックス内のコンテンツ */
+.box-content {
+    display: flex;
+    gap: 1rem; /* 画像の間隔 */
+    justify-content: center; /* 画像を中央に配置 */
+    align-items: center; /* 画像を垂直方向に中央に配置 */
+}
+
+/* ボックス内の画像 */
+.box-content img {
+     width: 60%; /* 親要素に合わせる */
+    height: auto !important; /* 縦横比を維持 */
+    object-fit: cover; /* 画像が枠に収まるように調整 */
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+}
+ /* 画像が均等に配置されるようにする */
 
 
 /* ---------------------------------- */
