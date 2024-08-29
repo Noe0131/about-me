@@ -96,7 +96,6 @@ iframe {
     transform: translateX(-50%); /* 水平方向に中央揃え */
     display: flex;
     z-index: 100;
-    
 }
 
 /* ボックス内のコンテンツ */
@@ -115,8 +114,6 @@ iframe {
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.6);
     border-radius: 0.5rem;
 }
- /* 画像が均等に配置されるようにする */
-
 
 /* ---------------------------------- */
 /* スクロールバーのスタイル */
