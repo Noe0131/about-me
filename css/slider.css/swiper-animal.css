@@ -89,7 +89,7 @@ iframe {
 
 /* -------------------------------- */
 
-.box {
+.island-creator {
     position: absolute;
     top: 30%;
     left: 50%; /* 水平方向の中央に配置 */
@@ -99,7 +99,7 @@ iframe {
 }
 
 /* ボックス内のコンテンツ */
-.box-content {
+.creator {
     display: flex;
     gap: 1rem; /* 画像の間隔 */
     justify-content: center; /* 画像を中央に配置 */
@@ -107,11 +107,11 @@ iframe {
 }
 
 /* ボックス内の画像 */
-.box-content img {
+.creator img {
      width: 60%; /* 親要素に合わせる */
     height: auto !important; /* 縦横比を維持 */
     object-fit: cover; /* 画像が枠に収まるように調整 */
-    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
 }
 
