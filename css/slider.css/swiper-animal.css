@@ -32,6 +32,17 @@ iframe {
     border-radius: 1rem;
 }
 
+.video-island {
+    position: absolute; /* 動画を絶対位置に設定 */
+    top: 50%; /* スライドの中央に配置 */
+    left: 50%; /* スライドの中央に配置 */
+    transform: translate(-50%, -50%); /* 中央に正確に配置するためのトランスフォーム */
+    width: 45%; /* 動画の幅を設定 */
+    height: 50%; /* 動画の高さを設定 */
+    z-index: 20;
+    border-radius: 1rem;
+}
+
 .scroll-bar-explanation {
     position: absolute; /* 絶対位置で配置 */
     bottom: 0.5rem; /* スライドの下端に配置 */
